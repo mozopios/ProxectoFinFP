@@ -1,6 +1,13 @@
 create database proxecto;
 
-use proxeto;
+use proxecto;
+
+CREATE TABLE roles_usuario(
+	id_rol INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	nombre_rol VARCHAR(50) NOT NULL,
+	permisos CHAR(3) NOT NULL DEFAULT 'r'
+);
+
 
 CREATE TABLE usuarios (
 	id_usuario INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -12,11 +19,6 @@ CREATE TABLE usuarios (
 	FOREIGN KEY (id_rol) REFERENCES roles_usuario(id_rol)
 );
 
-CREATE TABLE roles_usuarios(
-	id_rol INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	nombre_rol VARCHAR(50) NOT NULL,
-	permisos CHAR(3) NOT NULL DEFAULT 'r'
-);
 	
 CREATE TABLE menus (
 	id_menu INT NOT NULL AUTO_INCREMENT PRIMARY KEY,

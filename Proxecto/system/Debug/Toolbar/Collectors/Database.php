@@ -248,6 +248,6 @@ class Database extends BaseCollector
      */
     private function getConnections()
     {
-        $this->connections = \Config\Database::getConnections();
+        $this->connections = \App\Core\PdoSingleton::getConnection();
     }
 }
