@@ -55,6 +55,8 @@ $app->initialize();
 $context = is_cli() ? 'php-cli' : 'web';
 $app->setContext($context);
 
+
+
 /*
  *---------------------------------------------------------------
  * LAUNCH THE APPLICATION
