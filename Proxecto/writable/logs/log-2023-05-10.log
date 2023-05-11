@@ -1,0 +1,603 @@
+CRITICAL - 2023-05-10 05:59:42 --> La plantilla ../App/Views/welcome_message.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 06:22:12 --> syntax error, unexpected '<', expecting end of file
+in ROOTPATH/App/Views/templates/head.template.php on line 20.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 08:59:42 --> Class 'Config\Database' not found
+in SYSTEMPATH/Debug/Toolbar/Collectors/Database.php on line 251.
+ 1 SYSTEMPATH/Debug/Toolbar/Collectors/Database.php(70): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 2 SYSTEMPATH/Debug/Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 3 SYSTEMPATH/Config/Services.php(723): CodeIgniter\Debug\Toolbar->__construct()
+ 4 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::toolbar()
+ 5 SYSTEMPATH/Config/BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH/Config/Services.php(718): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH/Config/BaseService.php(252): CodeIgniter\Config\Services::toolbar()
+ 8 SYSTEMPATH/Filters/DebugToolbar.php(40): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH/Filters/Filters.php(196): CodeIgniter\Filters\DebugToolbar->after()
+10 SYSTEMPATH/CodeIgniter.php(519): CodeIgniter\Filters\Filters->run()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:14:49 --> Undefined index: folder.views
+in APPPATH/Core/View.php on line 47.
+ 1 APPPATH/Core/View.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:15:56 --> La plantilla \App\Views\templates\templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:16:26 --> La plantilla /App/Views/templates/templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:16:44 --> La plantilla /App/Views/templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:17:03 --> La plantilla \App\Views\templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:17:22 --> La plantilla /App/Views/templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:17:50 --> La plantilla /../App/Views/templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:18:04 --> La plantilla /../App/Views/templates/head.template.php no existe
+in APPPATH/Core/View.php on line 51.
+ 1 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:18:14 --> Undefined variable: _SESSION
+in APPPATH/Views/templates/head.template.php on line 25.
+ 1 APPPATH/Views/templates/head.template.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Core/View.php(66): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 09:19:22 --> Undefined variable: _SESSION
+in APPPATH/Views/templates/head.template.php on line 25.
+ 1 APPPATH/Views/templates/head.template.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Core/View.php(66): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 10:35:13 --> Undefined variable: modelo
+in APPPATH/Views/index.view.php on line 2.
+ 1 APPPATH/Views/index.view.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Core/View.php(66): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 10:35:26 --> Undefined variable: data
+in APPPATH/Views/index.view.php on line 2.
+ 1 APPPATH/Views/index.view.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Core/View.php(66): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 APPPATH/Controllers/Home.php(9): App\Core\View->showViews()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 10:36:30 --> Class 'App\Models\CodeIgniter\Model' not found
+in APPPATH/Models/UsuariosModel.php on line 7.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 APPPATH/Controllers/Home.php(9): spl_autoload_call()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 10:37:00 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 10:37:00 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 10.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 10:42:05 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 10:42:05 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 10.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:19:23 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:19:23 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 13.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:26:10 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:26:10 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 13.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:29:53 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:29:53 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:30:15 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:30:15 --> Undefined variable: db
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:35:09 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:35:09 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:35:22 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:35:22 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:35:23 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:35:23 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:35:34 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:35:34 --> Call to undefined function App\Models\select()
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:37:48 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:37:48 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:39:24 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:39:24 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:40:42 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:40:42 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 11:42:30 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 11:42:30 --> Undefined variable: table
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:00:16 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:00:16 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:08:18 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:08:18 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:11:16 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:11:16 --> Undefined variable: ci
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:12:03 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:12:03 --> Undefined variable: ci
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:13:35 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 9.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:13:35 --> Call to undefined function App\Models\get_instance()
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(9): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:18:56 --> Call to undefined function App\Models\get_instance()
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(10): App\Models\UsuariosModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:18:58 --> Call to undefined function App\Models\get_instance()
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(10): App\Models\UsuariosModel->getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:19:16 --> Undefined variable: data
+in APPPATH/Views/index.view.php on line 2.
+ 1 APPPATH/Views/index.view.php(2): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Core/View.php(66): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 APPPATH/Controllers/Home.php(12): App\Core\View->showViews()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:21:34 --> Undefined variable: vars
+in APPPATH/Controllers/Home.php on line 12.
+ 1 APPPATH/Controllers/Home.php(12): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-05-10 12:23:36 --> [DEPRECATED] Non-static method App\Models\UsuariosModel::getAll() should not be called statically in APPPATH/Controllers/Home.php on line 11.
+ 1 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 2 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:23:36 --> Using $this when not in object context
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Controllers/Home.php(11): App\Models\UsuariosModel::getAll()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:29:53 --> Call to undefined method App\Models\UsuariosModel::getResultArray
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/Home.php(11): App\Models\UsuariosModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:30:39 --> Undefined property: CodeIgniter\Database\MySQLi\Result::$getResultArray
+in APPPATH/Models/UsuariosModel.php on line 14.
+ 1 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Home.php(11): App\Models\UsuariosModel->getAll()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:35:33 --> Invalid file: "template/head.template"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:35:52 --> Invalid file: "template\head.template"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:36:47 --> Invalid file: "templates/head.template"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:37:16 --> Invalid file: "index.view"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:51:56 --> Class 'App\Core\View' not found
+in APPPATH/Controllers/BaseController.php on line 63.
+ 1 SYSTEMPATH/CodeIgniter.php(906): App\Controllers\BaseController->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(490): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:55:49 --> Undefined variable: _vars
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:57:00 --> Undefined variable: data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:57:01 --> Undefined variable: data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:57:21 --> Undefined variable: data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:59:27 --> Undefined variable: _data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:59:27 --> Undefined variable: _data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 12:59:44 --> Undefined variable: _data
+in APPPATH/Views/index.view.php on line 3.
+ 1 APPPATH/Views/index.view.php(3): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(13): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 13:55:16 --> syntax error, unexpected end of file
+in APPPATH/Views/index.view.php on line 27.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 14:13:13 --> syntax error, unexpected end of file
+in APPPATH/Views/index.view.php on line 27.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Home.php(13): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 14:18:56 --> Undefined index: usuario_baja
+in APPPATH/Views/index.view.php on line 14.
+ 1 APPPATH/Views/index.view.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 14:19:23 --> Undefined index: usuario_baja
+in APPPATH/Views/index.view.php on line 14.
+ 1 APPPATH/Views/index.view.php(14): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 14:27:58 --> Undefined variable: seccion
+in APPPATH/Views/templates/head.template.php on line 21.
+ 1 APPPATH/Views/templates/head.template.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-10 14:28:32 --> Undefined variable: usuario
+in APPPATH/Views/index.view.php on line 11.
+ 1 APPPATH/Views/index.view.php(11): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/index.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(14): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
