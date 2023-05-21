@@ -1,103 +1,77 @@
-<!-- Footer -->
-<footer class="text-center text-lg-start bg-dark text-white">
-  <!-- Section: Social media -->
-  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-    <!-- Left -->
-    <div class="me-5 d-none d-lg-block">
-      <span>Get connected with us on social networks:</span>
-    </div>
-    <!-- Left -->
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
 
-    <!-- Right -->
-    <div>
-      <a href="" class="me-4 text-white">
-          <i class="bi bi-facebook"></i>
-      </a>
-      <a href="" class="me-4 text-white">
-        <i class="bi bi-twitter"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="bi bi-google"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="bi bi-instagram"></i>
-      </a>
-      <a href="" class="me-4 text-reset">
-        <i class="bi bi-github"></i>
-      </a>
-    </div>
-    <!-- Right -->
-  </section>
-  <!-- Section: Social media -->
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div>
+            <h4>Dirección</h4>
+            <p>
+              As Neves, 36448 - Spain<br>
+            </p>
+          </div>
 
-  <!-- Section: Links  -->
-  <section class="">
-    <div class="container text-center text-md-start mt-5">
-      <!-- Grid row -->
-      <div class="row mt-3">
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-3">
-          <!-- Content -->
-          <h6 class="text-uppercase fw-bold mb-4">
-              <span>Pios d'rriba</span>
-          </h6>
-          <p>
-            Restaurante de comida casera 
-           </p>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Useful links
-          </h6>
-          <p>
-            <a href="#!" class="text-reset">Pricing</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Settings</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Orders</a>
-          </p>
-          <p>
-            <a href="#!" class="text-reset">Help</a>
-          </p>
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contacto</h4>
+            <p>
+              <strong>Teléfono:</strong> +34 558 95 54 88<br>
+              <strong>Email:</strong> piosDArriba@email.com<br>
+            </p>
+          </div>
         </div>
-        <!-- Grid column -->
 
-        <!-- Grid column -->
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
-          <p><i class="bi bi-house-fill"></i> As Neves, 36448, ES</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            piosdrriba@email.com
-          </p>
-          <p><i class="fas fa-phone me-3"></i> + 001 00 00 00</p>
-          <p><i class="fas fa-print me-3"></i> + 986 00 00 00</p>
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+              Sunday: Closed
+            </p>
+          </div>
         </div>
-        <!-- Grid column -->
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
       </div>
-      <!-- Grid row -->
     </div>
-  </section>
-  <!-- Section: Links  -->
 
-  <!-- Copyright -->
-  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-    © 2023 Copyright:
-    <a class="text-reset fw-bold" href="http://proxecto.localhost:8080/">Piosd'rriba.com</a>
-  </div>
-  <!-- Copyright -->
-</footer>
-<!-- Footer -->
-    </body>
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Pios d'Arriba</span></strong>. All Rights Reserved
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
-

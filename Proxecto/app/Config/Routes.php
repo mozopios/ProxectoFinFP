@@ -4,14 +4,15 @@ namespace Config;
 
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
-
+session_start();
 /*
  * --------------------------------------------------------------------
  * Router Setup
  * --------------------------------------------------------------------
  */
+
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('Home');
+$routes->setDefaultController('UsuarioController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -28,8 +29,13 @@ $routes->set404Override();
  */
 
 // We get a performance increase by specifying the default
-// route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// Rutas UsuariosController
+$routes->get("/","UsuarioController::index");
+$routes->get('/users','UsuarioController::mostrarTodos');
+$routes->get("/users/view/(:num)","UsuarioController::viewUser/$1");
+
+//Rutas PedidosController
+$routes->get("/reserva", "PedidoController::mostrarFormPedido");
 
 /*
  * --------------------------------------------------------------------

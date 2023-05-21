@@ -15,7 +15,7 @@ class UsuariosModel extends Model{
     }
     
     public function viewProfile(string $id){
-        return $this->select("*")->where("id" ==$id)->get()->getResultArray();
+        return $this->select("*")->where("id_usuario",$id)->get()->getResultArray()[0];
     }
 }
 
