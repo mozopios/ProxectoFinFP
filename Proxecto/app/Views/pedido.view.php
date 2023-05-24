@@ -1,15 +1,15 @@
-<section id="book-a-table" class="book-a-table">
+<section class=" section-bg book-a-table">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
           <p>RALICE <span>SU MEJOR</span> PEDIDO</p>
         </div>
 
-        <div class="row g-0">
+        <div class="row bg-light">
 
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+          <div class="col-lg-8 d-flex align-items-center reservation-form">
             <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
@@ -19,6 +19,14 @@
                 <div class="col-lg-4 col-md-6">
                   <input type="email" class="form-control" name="email" value="<?php echo isset($pedido) ? $pedido["email"] : "";?>" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email">
                   <div class="validate"></div>
+                </div>
+                  <div class="col-lg-4 col-md-6">
+                      <select class="form-select">
+                            <option>-----------------</option>
+                        <?php foreach ($menus as $menu):?>
+                            <option value="<?php echo $menu["id_menu"]?>"><?php echo $menu["nombre_menu"]?></option>
+                        <?php endforeach;?>
+                  </select>
                 </div>
                 <div class="col-lg-4 col-md-6">
                   <input type="text" class="form-control" name="phone" value="<?php echo isset($pedido) ? $pedido["telefono"] : "";?>" id="phone" placeholder="Telefono" data-rule="minlen:4" data-msg="Please enter at least 4 chars">

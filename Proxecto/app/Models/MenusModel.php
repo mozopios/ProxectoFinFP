@@ -38,4 +38,8 @@ class MenusModel extends Model{
             return false;
         }
     }
+    
+    public function getNombres(){
+        return $this->select("id_menu, nombre_menu")->get()->getResultArray();
+    }
 }
