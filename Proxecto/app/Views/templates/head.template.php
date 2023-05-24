@@ -4,15 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Pios d'rriba</title>
-    
-    <!-- Bootstrap 5 css y js -->
-    <!--<link rel="stylesheet" href="assets/css/bootstrap.main.css">
-    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
-    <script src="assets/js/bootstrap.bundle.min.js"></script>-->
-     <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,8 +42,14 @@
           <li><a href="/users/profile/<?php echo $_SESSION["id_usuario"]=1;?>">Perfil</a></li>
         </ul>
       </nav>
-
-      <a class="btn-book-a-table" href="/reserva">Reservar</a>
+            <?php if($_SESSION["permisos"]=== "Administrador" && $seccion=== "/menus"){?>
+                <a class="btn-book-a-table" href="/menus/add">Añadir Menú+</a>
+            <?php }else if($_SESSION["permisos"]=== "Administrador" && $seccion=== "/users"){?>
+                <a class="btn-book-a-table" href="/users/add">Añadir Usuario+</a>
+            <?php}else if($_SESSION["permisos"]!=="Administrador"){?>
+                <a class="btn-book-a-table" href="/reserva">Reservar</a>
+            <?php}else{?>
+            <?php }?>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 

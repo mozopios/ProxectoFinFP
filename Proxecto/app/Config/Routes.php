@@ -12,7 +12,7 @@ session_start();
  */
 
 $routes->setDefaultNamespace('App\Controllers');
-$routes->setDefaultController('UsuarioController');
+$routes->setDefaultController('InicioController');
 $routes->setDefaultMethod('index');
 $routes->setTranslateURIDashes(false);
 $routes->set404Override();
@@ -30,13 +30,17 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // Rutas UsuariosController
-$routes->get("/","UsuarioController::index");
+$routes->get("/","InicioController::index");
 $routes->get('/users','UsuarioController::mostrarTodos');
 $routes->get("/users/view/(:num)","UsuarioController::viewUser/$1");
-
+$routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
+$routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
 //Rutas PedidosController
 $routes->get("/reserva", "PedidoController::mostrarFormPedido");
 
+//Rutas PedidosController
+$routes->get("/menus", "MenusController::mostrarMenus");
+$routes->get("/menus/view/(:num)","MenusController::viewMenu/$1");
 /*
  * --------------------------------------------------------------------
  * Additional Routing

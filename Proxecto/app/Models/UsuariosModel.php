@@ -14,8 +14,19 @@ class UsuariosModel extends Model{
         return $this->select("*")->get()->getResultArray();    
     }
     
-    public function viewProfile(string $id){
+    public function getProfile(string $id){
         return $this->select("*")->where("id_usuario",$id)->get()->getResultArray()[0];
+    }
+    
+    public function bajaAltaUser(string $id){
+        $user = $this->getProfile($id);
+        if($user["baja_usuario"] === 0){
+            return $this->set("baja_usuario",1)->where("id_usuario",$id)->get();
+        }else if($user["baja_usuario"] === 1){
+            return $this->set("baja_usuario",0)->where("id_usuario",$id);
+        }else{
+            return false;
+        }
     }
 }
 

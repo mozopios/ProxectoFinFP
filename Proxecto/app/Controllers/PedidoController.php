@@ -7,7 +7,9 @@ namespace App\Controllers;
 class PedidoController extends \App\Controllers\BaseController{
     
     public function mostrarFormPedido(){
-        return view("/templates/head.template.php").view("pedido.view.php").view("/templates/footer.template.php");
+        $data = array();
+        $data["seccion"] = "/reserva";
+        return view("/templates/head.template.php",$data).view("pedido.view.php",$data).view("/templates/footer.template.php");
     }
     
     public function checkForm($post){

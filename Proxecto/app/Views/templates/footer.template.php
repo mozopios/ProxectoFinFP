@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links d-flex">
+        <div class="col-lg-3 col-md-5 footer-links d-flex">
           <i class="bi bi-clock icon"></i>
           <div>
             <h4>Opening Hours</h4>
@@ -36,7 +36,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 footer-links">
+        <div class="col-lg-2 col-md-6 footer-links">
           <h4>Follow Us</h4>
           <div class="social-links d-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -49,12 +49,11 @@
       </div>
     </div>
 
-    <div class="container">
+    <div class="container-md">
       <div class="copyright">
         &copy; Copyright <strong><span>Pios d'Arriba</span></strong>. All Rights Reserved
       </div>
     </div>
-
   </footer>
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

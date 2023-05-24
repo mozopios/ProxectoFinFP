@@ -33,7 +33,7 @@
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <input type="number" class="form-control" name="people" id="people" placeholder="Nº de personas">
+                    <input type="number" class="form-control" name="cantidad" id="cantidad" placeholder="Cantidad">
                   <div class="validate"></div>
                 </div>
               </div>
