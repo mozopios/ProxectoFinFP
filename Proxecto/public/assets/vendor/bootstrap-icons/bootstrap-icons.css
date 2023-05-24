@@ -1001,7 +1001,7 @@ url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("wof
 .bi-person-badge-fill::before { content: "\f4d2"; }
 .bi-person-badge::before { content: "\f4d3"; }
 .bi-person-bounding-box::before { content: "\f4d4"; }
-.bi-person-check-fill::before { content: "\f4d5"; }
+.bi-person-check-fill::before { content: "\f4d5";}
 .bi-person-check::before { content: "\f4d6"; }
 .bi-person-circle::before { content: "\f4d7"; }
 .bi-person-dash-fill::before { content: "\f4d8"; }
@@ -1011,7 +1011,7 @@ url("./fonts/bootstrap-icons.woff?24e3eb84d0bcaf83d77f904c78ac1f47") format("wof
 .bi-person-plus-fill::before { content: "\f4dc"; }
 .bi-person-plus::before { content: "\f4dd"; }
 .bi-person-square::before { content: "\f4de"; }
-.bi-person-x-fill::before { content: "\f4df"; }
+.bi-person-x-fill::before { content: "\f4df";}
 .bi-person-x::before { content: "\f4e0"; }
 .bi-person::before { content: "\f4e1"; }
 .bi-phone-fill::before { content: "\f4e2"; }

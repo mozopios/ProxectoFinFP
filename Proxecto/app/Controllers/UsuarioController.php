@@ -25,22 +25,22 @@ class UsuarioController extends BaseController
         $data = array();
         $data["seccion"] = "/users/view";
         $profile = $modelo->getProfile($id);
-        $nombreRol = $modeloRoles->getNombreRol($profile["id_rol"]);
-        $data["user"] = $profile;
-        $data["user"]["nombre_rol"]= $nombreRol["nombre_rol"];
-        return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
+        if(count($profile) !== 0){
+            $nombreRol = $modeloRoles->getNombreRol($profile[0]["id_rol"]);
+            $data["user"] = $profile[0];
+            $data["user"]["nombre_rol"]= $nombreRol["nombre_rol"];
+            return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
+        }else{
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
     }
     
     public function bajaAltaUser(string $id){
-        $data = array();
         $modelo = new \App\Models\UsuariosModel();
-        $user = $modelo->getProfile($id);
         if($modelo->bajaAltaUser($id)){
-            header('Location: /users');
-            $data=$modelo->bajaAltaUser($id);
+            return redirect()->to("/users");
         }else{
-            header("Location: methodNotAllowed");
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
-        return $data;
     }
 }

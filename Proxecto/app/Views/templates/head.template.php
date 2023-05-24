@@ -34,22 +34,20 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="/menus">Menus</a></li>
-          <?php if($_SESSION["permisos"] === "Administrador"){?>
-                <li><a href="/users">Clientes</a></li>
+          <?php if($seccion !== "/menus"){?>
+            <li><a href="/menus">Menus</a></li>
+          <?php }?>
+          <?php if($_SESSION["permisos"] === "Administrador" && $seccion !== "/users"){?>
+                <li><a href="/users">Usuarios</a></li>
           <?php }?>
           <li><a href="/pedidos/<?php echo $_SESSION["id_usuario"]=1;?>">Pedidos</a></li>
           <li><a href="/users/profile/<?php echo $_SESSION["id_usuario"]=1;?>">Perfil</a></li>
         </ul>
       </nav>
-            <?php if($_SESSION["permisos"]=== "Administrador" && $seccion=== "/menus"){?>
-                <a class="btn-book-a-table" href="/menus/add">Añadir Menú+</a>
-            <?php }else if($_SESSION["permisos"]=== "Administrador" && $seccion=== "/users"){?>
-                <a class="btn-book-a-table" href="/users/add">Añadir Usuario+</a>
-            <?php}else if($_SESSION["permisos"]!=="Administrador"){?>
+            <?php if($_SESSION["permisos"]!== "Administrador" && $seccion!= "/reserva"){?>
                 <a class="btn-book-a-table" href="/reserva">Reservar</a>
-            <?php}else{?>
             <?php }?>
+                
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 

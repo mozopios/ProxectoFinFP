@@ -32,15 +32,18 @@ $routes->set404Override();
 // Rutas UsuariosController
 $routes->get("/","InicioController::index");
 $routes->get('/users','UsuarioController::mostrarTodos');
-$routes->get("/users/view/(:num)","UsuarioController::viewUser/$1");
-$routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
-$routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
+$routes->get("/user/view/(:num)","UsuarioController::viewUser/$1");
+$routes->get("/user/baja/(:num)","UsuarioController::bajaAltaUser/$1");
+$routes->get("/user/alta/(:num)","UsuarioController::bajaAltaUser/$1");
+
 //Rutas PedidosController
 $routes->get("/reserva", "PedidoController::mostrarFormPedido");
 
 //Rutas PedidosController
 $routes->get("/menus", "MenusController::mostrarMenus");
-$routes->get("/menus/view/(:num)","MenusController::viewMenu/$1");
+$routes->get("/menu/view/(:num)","MenusController::viewMenu/$1");
+$routes->get("/menu/baja/(:num)","MenusController::bajaAltaMenu/$1");
+$routes->get("/menu/alta/(:num)","MenusController::bajaAltaMenu/$1");
 /*
  * --------------------------------------------------------------------
  * Additional Routing

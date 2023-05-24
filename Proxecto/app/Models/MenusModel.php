@@ -18,4 +18,24 @@ class MenusModel extends Model{
     public function getMenu(string $id){
         return $this->select("*")->where("id_menu",$id)->get()->getResultArray()[0];
     }
+    
+     public function bajaAltaMenu(string $id){
+        $menu = $this->select("*")->where("id_menu",$id)->get()->getResultArray();
+        if(count($menu) !== 0){
+            $data = array();
+            if($menu[0]["estado_menu"] != 0){
+                $this->set("estado_menu","0");
+                $this->where("id_menu",$id);
+                $this->update();
+                return true;
+            }elseif($menu[0]["estado_menu"] != 1){
+                $this->set("estado_menu","1");
+                $this->where("id_menu",$id);
+                $this->update();
+                return true;
+            }
+        }else{
+            return false;
+        }
+    }
 }

@@ -20,5 +20,14 @@ class MenusController extends BaseController
         $data["menu"] = $menu;
         return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
     }
+    
+    public function bajaAltaMenu(string $id){
+        $modelo = new \App\Models\MenusModel();
+        if($modelo->bajaAltaMenu($id)){
+            return redirect()->to("/menus");
+        }else{
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
 }
 

@@ -61,7 +61,7 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  padding: 80px 0;
+  padding: 80px 0 ;
 }
 
 .section-bg {
@@ -1569,8 +1569,8 @@ section {
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background-color: #1f1f24;
-  padding: 50px 0;
+  background-color: white;
+  padding: 30px 0;
   color: rgba(255, 255, 255, 0.7);
 }
 

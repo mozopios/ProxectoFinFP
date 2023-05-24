@@ -1,0 +1,630 @@
+CRITICAL - 2023-05-24 10:19:29 --> Undefined variable: profile
+in APPPATH/Controllers/UsuarioController.php on line 18.
+ 1 APPPATH/Controllers/UsuarioController.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:20:05 --> Undefined index: nombre_rol
+in APPPATH/Views/users.view.php on line 20.
+ 1 APPPATH/Views/users.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/users.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:38:26 --> Undefined variable: user
+in APPPATH/Models/UsuariosModel.php on line 22.
+ 1 APPPATH/Models/UsuariosModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(37): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:40:30 --> Undefined offset: 0
+in APPPATH/Models/UsuariosModel.php on line 18.
+ 1 APPPATH/Models/UsuariosModel.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/UsuariosModel.php(22): App\Models\UsuariosModel->getProfile()
+ 3 APPPATH/Controllers/UsuarioController.php(37): App\Models\UsuariosModel->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:41:22 --> Undefined offset: 0
+in APPPATH/Models/UsuariosModel.php on line 19.
+ 1 APPPATH/Models/UsuariosModel.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/UsuariosModel.php(26): App\Models\UsuariosModel->getProfile()
+ 3 APPPATH/Controllers/UsuarioController.php(37): App\Models\UsuariosModel->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:46:29 --> Undefined index: id_rol
+in APPPATH/Controllers/UsuarioController.php on line 29.
+ 1 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:46:33 --> Undefined variable: message
+in APPPATH/Views/errors/html/error_404.php on line 77.
+ 1 APPPATH/Views/errors/html/error_404.php(77): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/errors/html/error_404.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(34): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:51:59 --> Undefined index: id_rol
+in APPPATH/Controllers/UsuarioController.php on line 28.
+ 1 APPPATH/Controllers/UsuarioController.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:54:46 --> Undefined index: id_rol
+in APPPATH/Controllers/UsuarioController.php on line 29.
+ 1 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:55:08 --> Undefined index: id_rol
+in APPPATH/Controllers/UsuarioController.php on line 29.
+ 1 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:56:40 --> Undefined index: usuarios
+in APPPATH/Controllers/UsuarioController.php on line 29.
+ 1 APPPATH/Controllers/UsuarioController.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 10:56:51 --> Undefined index: usuarios
+in APPPATH/Controllers/UsuarioController.php on line 30.
+ 1 APPPATH/Controllers/UsuarioController.php(30): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:11:08 --> syntax error, unexpected 'throw' (T_THROW), expecting ';'
+in APPPATH/Controllers/UsuarioController.php on line 45.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 [internal function]: spl_autoload_call()
+ 5 SYSTEMPATH/CodeIgniter.php(892): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(486): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:11:17 --> Argument 2 passed to view() must be of the type array, bool given, called in /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php on line 43
+in SYSTEMPATH/Common.php on line 1172.
+ 1 APPPATH/Controllers/UsuarioController.php(43): view()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:17:50 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH/BaseModel.php on line 1706.
+ 1 SYSTEMPATH/BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:20:55 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH/BaseModel.php on line 1706.
+ 1 SYSTEMPATH/BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:24:46 --> Call to undefined method App\Models\UsuariosModel::updateField
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:30:15 --> Undefined variable: user
+in APPPATH/Models/UsuariosModel.php on line 22.
+ 1 APPPATH/Models/UsuariosModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:30:41 --> Undefined index: baja_usuario
+in APPPATH/Models/UsuariosModel.php on line 24.
+ 1 APPPATH/Models/UsuariosModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:32:13 --> Undefined variable: user
+in APPPATH/Models/UsuariosModel.php on line 23.
+ 1 APPPATH/Models/UsuariosModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:32:31 --> Cannot use object of type App\Models\UsuariosModel as array
+in APPPATH/Models/UsuariosModel.php on line 23.
+ 1 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:33:43 --> count(): Parameter must be an array or an object that implements Countable
+in APPPATH/Models/UsuariosModel.php on line 23.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Models/UsuariosModel.php(23): count()
+ 3 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:34:07 --> Undefined index: baja_usuario
+in APPPATH/Models/UsuariosModel.php on line 24.
+ 1 APPPATH/Models/UsuariosModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:35:26 --> Undefined index: usuarios
+in APPPATH/Models/UsuariosModel.php on line 23.
+ 1 APPPATH/Models/UsuariosModel.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:35:48 --> Undefined index: baja_usuario
+in APPPATH/Models/UsuariosModel.php on line 24.
+ 1 APPPATH/Models/UsuariosModel.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:42:48 --> Argument 1 passed to CodeIgniter\BaseModel::replace() must be of the type array or null, string given, called in /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php on line 30
+in SYSTEMPATH/BaseModel.php on line 1129.
+ 1 APPPATH/Models/UsuariosModel.php(30): CodeIgniter\BaseModel->replace()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 11:44:09 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`)) in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/system/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-24 11:44:09 --> Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+ 6 SYSTEMPATH/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+ 7 APPPATH/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+ 8 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 11:44:58 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`)) in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/system/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-24 11:44:58 --> Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+ 6 SYSTEMPATH/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+ 7 APPPATH/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+ 8 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 11:45:00 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`)) in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/system/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-24 11:45:00 --> Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+ 6 SYSTEMPATH/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+ 7 APPPATH/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+ 8 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 11:45:25 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`)) in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/system/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-24 11:45:25 --> Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+ 6 SYSTEMPATH/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+ 7 APPPATH/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+ 8 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 11:45:27 --> mysqli_sql_exception: Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`)) in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/system/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#11 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-05-24 11:45:27 --> Cannot add or update a child row: a foreign key constraint fails (`proxecto`.`usuarios`, CONSTRAINT `usuarios_ibfk_1` FOREIGN KEY (`id_rol`) REFERENCES `roles_usuario` (`id_rol`))
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(2397): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(494): CodeIgniter\Database\BaseBuilder->replace()
+ 6 SYSTEMPATH/BaseModel.php(1140): CodeIgniter\Model->doReplace()
+ 7 APPPATH/Models/UsuariosModel.php(35): CodeIgniter\BaseModel->replace()
+ 8 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 9 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+10 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:48:11 --> Call to a member function where() on bool
+in APPPATH/Models/UsuariosModel.php on line 39.
+ 1 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:50:37 --> Undefined variable: data
+in APPPATH/Controllers/UsuarioController.php on line 45.
+ 1 APPPATH/Controllers/UsuarioController.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:51:33 --> Undefined offset: 0
+in APPPATH/Models/UsuariosModel.php on line 22.
+ 1 APPPATH/Models/UsuariosModel.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:52:13 --> Undefined index: baja_usuario
+in APPPATH/Models/UsuariosModel.php on line 25.
+ 1 APPPATH/Models/UsuariosModel.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:52:42 --> Undefined index: id_rol
+in APPPATH/Models/UsuariosModel.php on line 28.
+ 1 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:52:52 --> Undefined index: id_rol
+in APPPATH/Models/UsuariosModel.php on line 28.
+ 1 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 11:53:10 --> Undefined index: id_rol
+in APPPATH/Models/UsuariosModel.php on line 28.
+ 1 APPPATH/Models/UsuariosModel.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:05:44 --> Undefined variable: usuario
+in APPPATH/Views/menus.view.php on line 23.
+ 1 APPPATH/Views/menus.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/menus.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/MenusController.php(12): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MenusController->mostrarMenus()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:11:33 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1680.
+ 1 SYSTEMPATH/BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray()
+ 3 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 4 APPPATH/Models/UsuariosModel.php(31): CodeIgniter\Model->update()
+ 5 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:12:03 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 1680.
+ 1 SYSTEMPATH/BaseModel.php(1680): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray()
+ 3 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 4 APPPATH/Models/UsuariosModel.php(31): CodeIgniter\Model->update()
+ 5 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:15:32 --> Call to undefined method App\Models\UsuariosModel::UpdateField
+in SYSTEMPATH/Model.php on line 842.
+ 1 APPPATH/Models/UsuariosModel.php(31): CodeIgniter\Model->__call()
+ 2 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:19:30 --> Return value of CodeIgniter\BaseModel::transformDataToArray() must be of the type array, string returned
+in SYSTEMPATH/BaseModel.php on line 1706.
+ 1 SYSTEMPATH/BaseModel.php(910): CodeIgniter\BaseModel->transformDataToArray()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:21:57 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:22:15 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:25:13 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:26:14 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:27:19 --> There is no data to update.
+in SYSTEMPATH/BaseModel.php on line 924.
+ 1 SYSTEMPATH/BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(29): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:31:25 --> Updates are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH/Model.php on line 391.
+ 1 SYSTEMPATH/BaseModel.php(943): CodeIgniter\Model->doUpdate()
+ 2 SYSTEMPATH/Model.php(756): CodeIgniter\BaseModel->update()
+ 3 APPPATH/Models/UsuariosModel.php(27): CodeIgniter\Model->update()
+ 4 APPPATH/Controllers/UsuarioController.php(40): App\Models\UsuariosModel->bajaAltaUser()
+ 5 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->bajaAltaUser()
+ 6 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:41:02 --> syntax error, unexpected end of file
+in APPPATH/Views/templates/head.template.php on line 56.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MenusController.php(12): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MenusController->mostrarMenus()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:53:08 --> Undefined index: nombre_usuario
+in APPPATH/Views/users.view.php on line 18.
+ 1 APPPATH/Views/users.view.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/users.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:54:13 --> syntax error, unexpected ';'
+in APPPATH/Views/users.view.php on line 18.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/UsuarioController.php(19): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:54:21 --> Undefined index: apellidos
+in APPPATH/Views/users.view.php on line 19.
+ 1 APPPATH/Views/users.view.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/users.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-05-24 12:55:41 --> mysqli_sql_exception: Unknown column 'apellido' in 'field list' in /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php:295
+Stack trace:
+#0 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/MySQLi/Connection.php(295): mysqli->query()
+#1 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /home/dev/www/ProxectoFinFp/Proxecto/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#4 /home/dev/www/ProxectoFinFp/Proxecto/system/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+#5 /home/dev/www/ProxectoFinFp/Proxecto/app/Models/UsuariosModel.php(14): CodeIgniter\Model->__call()
+#6 /home/dev/www/ProxectoFinFp/Proxecto/app/Controllers/UsuarioController.php(16): App\Models\UsuariosModel->getAll()
+#7 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+#8 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+#9 /home/dev/www/ProxectoFinFp/Proxecto/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/dev/www/ProxectoFinFp/Proxecto/public/index.php(68): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-05-24 12:55:41 --> Unknown column 'apellido' in 'field list'
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 295.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(295): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(840): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH/Models/UsuariosModel.php(14): CodeIgniter\Model->__call()
+ 7 APPPATH/Controllers/UsuarioController.php(16): App\Models\UsuariosModel->getAll()
+ 8 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 9 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:55:50 --> Undefined index: contraseña
+in APPPATH/Views/users.view.php on line 19.
+ 1 APPPATH/Views/users.view.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/users.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 12:56:04 --> Undefined index: id_usuario
+in APPPATH/Views/users.view.php on line 22.
+ 1 APPPATH/Views/users.view.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/users.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(19): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 13:17:00 --> Undefined variable: user
+in APPPATH/Models/MenusModel.php on line 26.
+ 1 APPPATH/Models/MenusModel.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/MenusController.php(26): App\Models\MenusModel->bajaAltaMenu()
+ 3 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MenusController->bajaAltaMenu()
+ 4 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 13:20:16 --> syntax error, unexpected end of file
+in APPPATH/Views/menus.view.php on line 38.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/MenusController.php(12): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\MenusController->mostrarMenus()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
