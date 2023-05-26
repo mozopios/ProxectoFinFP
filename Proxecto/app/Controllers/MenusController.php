@@ -7,6 +7,7 @@ class MenusController extends BaseController
     public function mostrarMenus(){
         $data= array();
         $data["seccion"] = "/menus";
+        $data["session"]["permisos"] = "Administrador";
         $menuModel = new \App\Models\MenusModel();
         $data["menus"] = $menuModel->getAll();
         return view("templates/head.template.php",$data).view("menus.view.php",$data).view("templates/footer.template.php");
@@ -15,12 +16,45 @@ class MenusController extends BaseController
      public function viewMenu($id){
         $modelo = new \App\Models\MenusModel();
         $data = array();
-        $data["seccion"] = "/menus/view";
+        $data["seccion"] = "/menu/view/$id";
+        $data["session"]["permisos"] = "Administrador";
+        $menu = $modelo->getMenu($id);
+        $data["menu"] = $menu;
+        return view("templates/head.template.php",$data).view("detail.menu.view.php",$data).view("templates/footer.template.php");
+    }
+    
+    public function mostrarEdit($id){
+        $modelo = new \App\Models\MenusModel();
+        $data = array();
+        $data["seccion"] = "/menus/edit/$id";
+        $data["session"]["permisos"] = "Administrador";
         $menu = $modelo->getMenu($id);
         $data["menu"] = $menu;
         return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
     }
     
+    public function edit($id) {
+        $data[] = array();
+        $error = $this->checkForm($_POST);
+        if (count($error) === 0) {
+            $modelo = new \App\Models\MenusModel();
+            if($modelo->edit($_POST,$id)){
+                return redirect()->to("/menus");
+            } else {
+                $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+                $data["seccion"] = "/menus/edit/$id";
+                $data["session"]["permisos"] = "Administrador";
+                $data["error"]["general"] = "Error indeterminado al guardar";
+                return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+            }
+        } else {
+            $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+            $data["seccion"] = "/menus/edit/$id";
+            $data["session"]["permisos"] = "Administrador";
+            $data["error"] = $error;
+            return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+        }
+    }
     public function bajaAltaMenu(string $id){
         $modelo = new \App\Models\MenusModel();
         if($modelo->bajaAltaMenu($id)){
@@ -28,6 +62,31 @@ class MenusController extends BaseController
         }else{
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
         }
+    }
+    
+    function checkForm(array $post): array {
+        $error = [];
+        if (empty($post['nombre_menu'])) {
+            $error['nombre_menu'] = "Campo obligatorio";
+        }
+        if (empty($post['primero'])) {
+            $error['primero'] = "Campo obligatorio";
+        }
+        if (empty($post['segundo'])) {
+            $error['segundo'] = "Campo obligatorio";
+        }   
+        if (empty($post["postre"])) {
+            $error["postre"] = "Campo obligatorio";
+        }
+        if (empty($post['informacion'])) {
+            $error['informacion'] = "Campo obligatorio";
+        }
+        if (empty($post['precio_menu'])) {
+            $error['precio_menu'] = "Campo obligatorio";
+        }elseif(!is_numeric($post["precio_menu"])){
+            $error["precio_menu"] = "El precio no es numerico";
+        }
+        return $error;
     }
 }
 

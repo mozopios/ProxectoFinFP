@@ -9,6 +9,7 @@ class PedidoController extends \App\Controllers\BaseController{
     public function mostrarFormPedido(){
         $data = array();
         $data["seccion"] = "/reserva";
+        $data["session"]["permisos"] = "Administrador";
         $menuModel = new \App\Models\MenusModel();
         $menus = $menuModel->getNombres();
         $data["menus"] = $menus;

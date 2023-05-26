@@ -39,6 +39,17 @@ class MenusModel extends Model{
         }
     }
     
+    public function edit(array $_array,$id){
+        $menu = $this->select("*")->where("id_menu",$id)->get()->getResultArray();
+        if(count($menu) > 0){
+            $this->set($_array);
+            $this->where("id_menu",$id);
+            $this->update();
+            return true;
+        }else{
+            return false;
+        }
+    }
     public function getNombres(){
         return $this->select("id_menu, nombre_menu")->get()->getResultArray();
     }

@@ -29,21 +29,35 @@ $routes->set404Override();
  */
 
 // We get a performance increase by specifying the default
-// Rutas UsuariosController
+// Ruta Inicio
 $routes->get("/","InicioController::index");
+
+// Rutas UsuariosController
 $routes->get('/users','UsuarioController::mostrarTodos');
-$routes->get("/user/view/(:num)","UsuarioController::viewUser/$1");
-$routes->get("/user/baja/(:num)","UsuarioController::bajaAltaUser/$1");
-$routes->get("/user/alta/(:num)","UsuarioController::bajaAltaUser/$1");
+
+$routes->get("/users/view/(:num)","UsuarioController::viewUser/$1");
+
+$routes->get("/users/edit/(:num)","UsuarioController::mostrarEdit/$1");
+$routes->post("/users/edit/(:num)","UsuarioController::edit/$1");
+
+$routes->get("/users/add","UsuarioController::mostrarAdd");
+$routes->post("/users/add","UsuarioController::add");
+
+$routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
+$routes->get("/users/alta/(:num)","UsuarioController::bajaAltaUser/$1");
 
 //Rutas PedidosController
 $routes->get("/reserva", "PedidoController::mostrarFormPedido");
 
-//Rutas PedidosController
+//Rutas MenusController
 $routes->get("/menus", "MenusController::mostrarMenus");
-$routes->get("/menu/view/(:num)","MenusController::viewMenu/$1");
-$routes->get("/menu/baja/(:num)","MenusController::bajaAltaMenu/$1");
-$routes->get("/menu/alta/(:num)","MenusController::bajaAltaMenu/$1");
+$routes->get("/menus/view/(:num)","MenusController::viewMenu/$1");
+
+$routes->get("/menus/edit/(:num)","MenusController::mostrarEdit/$1");
+$routes->post("/menus/edit/(:num)","MenusController::edit/$1");
+
+$routes->get("/menus/baja/(:num)","MenusController::bajaAltaMenu/$1");
+$routes->get("/menus/alta/(:num)","MenusController::bajaAltaMenu/$1");
 /*
  * --------------------------------------------------------------------
  * Additional Routing

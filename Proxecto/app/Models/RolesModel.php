@@ -12,9 +12,19 @@ class RolesModel extends Model{
     protected $allowedFields = ["id_rol","nombre_rol","permisos"];
     
     
+    public function getNombresAndId(){
+        return $this->select("id_rol, nombre_rol")->get()->getResultArray();
+    }
     public function getNombreRol($id){
-     
         return $this->select("nombre_rol")->where("id_rol",$id)->get()->getResultArray()[0];
+    }
+    public function isExistRol($id){
+        $rol = $this->select("*")->where("id_rol", $id);
+        if($result = $rol->get()->getResultArray()){
+            return $result;
+        }else{
+            return null;
+        }
     }
 }
 
