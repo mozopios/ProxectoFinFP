@@ -1,5 +1,8 @@
 <section class="section-header align-items-center section-bg mt-5">
     <div class="container-fluid">
+        <?php if($session["permisos"] == "Administrador"){?>
+            <div class="text-end mb-4 me-3"><a href="/menus/add"  class="btn btn-primary">Añadir Menu +</a></div>
+        <?php }?>
     <?php if(isset($menus)){?>
         <table class="table">
             <thead>
@@ -30,7 +33,7 @@
                         <td><?php echo $menu["segundo"];?></td>
                         <td><?php echo $menu["postre"];?></td>
                         <td class="items d-inline-block"><a href="/menus/view/<?php echo $menu["id_menu"];?>"><i class="bi bi-eye-fill text-muted"></i></a>
-                        <a href="/menus/edit/<?php echo $menu["id_menu"];?>"><i class="bi bi-person-fill-gear text-primary"></i></a>
+                        <a href="/menus/edit/<?php echo $menu["id_menu"];?>"><i class="bi bi-pencil-square text-primary"></i></a>
                         <a href="/menus/<?php echo $menu["estado_menu"] != 0 ? "alta" : "baja"?>/<?php echo $menu["id_menu"];?>"><i class="<?php echo $menu["estado_menu"] != 0 ? "bi bi-toggle-off text-danger" : "bi bi bi-toggle-on text-success"?>"></i></a></td>
                     </tr>
                 <?php }?>

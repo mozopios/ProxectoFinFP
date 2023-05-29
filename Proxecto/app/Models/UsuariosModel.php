@@ -71,5 +71,9 @@ class UsuariosModel extends Model{
         $this->select("*")->where("correo_electronico", $email);
         return $this->countAllResults();
     }
+    
+    public function getIdWithEmail(string $email){
+        return $this->select("id_usuario")->where("correo_electronico", $email)->get()->getResultArray()[0];
+    }
 }
 

@@ -9,7 +9,7 @@
                 <?php }?>
               <div class="row gy-4">
                 <div class="col-lg-2 col-md-6">
-                    <label class="form-label" for="name">Nombre</label>
+                    <label class="form-label" for="nombre_menu">Nombre</label>
                     <input type="text" class="form-control" name="nombre_menu" value="<?php echo isset($menu) ? $menu["nombre_menu"] : "";?>">
                     <div class="col-lg-12 text-danger"><?php echo isset($error["nombre_menu"]) ? $error["nombre_menu"] : "";?></div>
                 </div>
@@ -19,7 +19,7 @@
                     <div class="col-lg-12 text-danger"><?php echo isset($error["primero"]) ? $error["primero"] : "";?></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                    <label class="form-label" for="primero">Segundo</label>
+                    <label class="form-label" for="segundo">Segundo</label>
                     <input type="text" class="form-control" name="segundo" value="<?php echo isset($menu) ? $menu["segundo"] : "";?>">
                     <div class="col-lg-12 text-danger"><?php echo isset($error["segundo"]) ? $error["segundo"] : "";?></div>
                 </div>

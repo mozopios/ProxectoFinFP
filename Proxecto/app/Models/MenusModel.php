@@ -50,7 +50,31 @@ class MenusModel extends Model{
             return false;
         }
     }
+    
+    public function add(array $_array){
+        $this->insert($_array);
+        if($this->countAllResults()>0){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    public function isExistMenu(string $id){
+        $this->select("*")->where("id_menu", $id);
+        return $this->countAllResults();
+    }
+    
+    public function isExistNombre(string $nombre){
+        $this->select("*")->where("nombre_menu", $nombre);
+        return $this->countAllResults();
+    }
+    
     public function getNombres(){
-        return $this->select("id_menu, nombre_menu")->get()->getResultArray();
+        return $this->select("id_menu, nombre_menu")->where("estado_menu",0)->get()->getResultArray();
+    }
+    
+    public function getPrecioMenu(string $id){
+        return $this->select("precio_menu")->where("id_menu",$id)->get()->getResultArray()[0];
     }
 }

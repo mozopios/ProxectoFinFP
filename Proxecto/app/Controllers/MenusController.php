@@ -55,6 +55,37 @@ class MenusController extends BaseController
             return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
         }
     }
+    
+    public function mostrarAdd(){
+        $data = array();
+        $data["seccion"] = "/menus/add";
+        $data["session"]["permisos"] = "Administrador";
+        return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+    }
+    
+    public function add() {
+        $data[] = array();
+        $error = $this->checkForm($_POST);
+        if (count($error) === 0) {
+            $modelo = new \App\Models\MenusModel();
+            if($modelo->add($_POST)){
+                return redirect()->to("/menus");
+            } else {
+                $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+                $data["seccion"] = "/menus/add";
+                $data["session"]["permisos"] = "Administrador";
+                $data["error"]["general"] = "Error indeterminado al guardar";
+                return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+            }
+        } else {
+            $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+            $data["seccion"] = "/menus/add";
+            $data["session"]["permisos"] = "Administrador";
+            $data["error"] = $error;
+            return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+        }
+    }
+    
     public function bajaAltaMenu(string $id){
         $modelo = new \App\Models\MenusModel();
         if($modelo->bajaAltaMenu($id)){
@@ -68,6 +99,11 @@ class MenusController extends BaseController
         $error = [];
         if (empty($post['nombre_menu'])) {
             $error['nombre_menu'] = "Campo obligatorio";
+        }else{
+            $modelo = new \App\Models\MenusModel();
+            if($modelo->isExistNombre($post["nombre_menu"])>0){
+                $error["nombre_menu"] = "El nombre del menú ya existe";
+            }
         }
         if (empty($post['primero'])) {
             $error['primero'] = "Campo obligatorio";

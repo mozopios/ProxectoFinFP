@@ -49,12 +49,17 @@ $routes->get("/users/alta/(:num)","UsuarioController::bajaAltaUser/$1");
 //Rutas PedidosController
 $routes->get("/reserva", "PedidoController::mostrarFormPedido");
 
+$routes->post("/reserva", "PedidoController::addPedido");
+
 //Rutas MenusController
 $routes->get("/menus", "MenusController::mostrarMenus");
 $routes->get("/menus/view/(:num)","MenusController::viewMenu/$1");
 
 $routes->get("/menus/edit/(:num)","MenusController::mostrarEdit/$1");
 $routes->post("/menus/edit/(:num)","MenusController::edit/$1");
+
+$routes->get("/menus/add","MenusController::mostrarAdd");
+$routes->post("/menus/add","MenusController::add");
 
 $routes->get("/menus/baja/(:num)","MenusController::bajaAltaMenu/$1");
 $routes->get("/menus/alta/(:num)","MenusController::bajaAltaMenu/$1");
