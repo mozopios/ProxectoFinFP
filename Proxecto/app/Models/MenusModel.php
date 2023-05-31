@@ -77,4 +77,8 @@ class MenusModel extends Model{
     public function getPrecioMenu(string $id){
         return $this->select("precio_menu")->where("id_menu",$id)->get()->getResultArray()[0];
     }
+    
+    public function getNombre(string $id){
+        return $this->select("nombre_menu")->where("id_menu",$id)->get()->getResultArray()[0];
+    }
 }

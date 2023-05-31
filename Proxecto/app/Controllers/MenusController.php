@@ -16,21 +16,33 @@ class MenusController extends BaseController
      public function viewMenu($id){
         $modelo = new \App\Models\MenusModel();
         $data = array();
-        $data["seccion"] = "/menu/view/$id";
-        $data["session"]["permisos"] = "Administrador";
-        $menu = $modelo->getMenu($id);
-        $data["menu"] = $menu;
-        return view("templates/head.template.php",$data).view("detail.menu.view.php",$data).view("templates/footer.template.php");
+        if($modelo->isExistMenu($id)>0){
+            $menu = $modelo->getMenu($id);
+            if($_SESSION["permisos"]["menus"] == "rw" && $menu["estado_menu"] != 0){
+                $data["errorGeneral"] = "El menú no está disponible";
+                $data["menus"] = $modelo->getAll();
+                $data["seccion"] = "/menus";
+                return view("templates/head.template.php",$data).view("menus.view.php",$data).view("templates/footer.template.php");
+            }else{
+                $data["menu"] = $menu;
+                $data["seccion"] = "/menu/view/$id";
+                return view("templates/head.template.php",$data).view("detail.menu.view.php",$data).view("templates/footer.template.php");
+            }
+        }
+        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     }
     
     public function mostrarEdit($id){
         $modelo = new \App\Models\MenusModel();
         $data = array();
-        $data["seccion"] = "/menus/edit/$id";
-        $data["session"]["permisos"] = "Administrador";
-        $menu = $modelo->getMenu($id);
-        $data["menu"] = $menu;
-        return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+        if($modelo->isExistMenu($id)>0){
+            $data["seccion"] = "/menus/edit/$id";
+            $data["session"]["permisos"] = "Administrador";
+            $menu = $modelo->getMenu($id);
+            $data["menu"] = $menu;
+            return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+        }
+        throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
     }
     
     public function edit($id) {

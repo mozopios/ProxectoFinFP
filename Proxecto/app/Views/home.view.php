@@ -1,4 +1,3 @@
-<!-- ======= Hero Section ======= -->
 <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
       <div class="row justify-content-between gy-5">
@@ -6,7 +5,9 @@
           <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
           <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <?php if($_SESSION["permisos"]["pedidos"] !== "r" && strpos($_SESSION["permisos"]["pedidos"],"d")=== false){?>
             <a href="/reserva" class="btn-book-a-table">Reservar</a>
+            <?php }?>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -15,5 +16,5 @@
         </div>
       </div>
     </div>
-  </section><!-- End Hero Section -->
+  </section>
 

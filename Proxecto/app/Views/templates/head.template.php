@@ -31,19 +31,25 @@
 
       <nav id="navbar" class="navbar justify-content-between">
         <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <?php if($seccion !== "/menus"){?>
-            <li><a href="/menus">Menus</a></li>
-          <?php }?>
-          <?php if($session["permisos"] === "Administrador" && $seccion !== "/users"){?>
+            <?php if($seccion !== "/"){?>
+                <li><a href="/">Home</a></li>
+            <?php }?>    
+            <?php if($seccion !== "/menus"){?>
+                <li><a href="/menus">Menus</a></li>
+            <?php }?>
+            <?php if(strpos($_SESSION["permisos"]["usuarios"],"d") !== false && $seccion !== "/users"){?>
                 <li><a href="/users">Usuarios</a></li>
-          <?php }?>
-          <li><a href="/pedidos/<?php echo $_SESSION["id_usuario"]=1;?>">Pedidos</a></li>
-          <li><a href="/users/profile/<?php echo $_SESSION["id_usuario"]=1;?>">Perfil</a></li>
+            <?php  }?>
+            <?php if(strpos($seccion, "/pedidos") === false){?>
+                <li><a href="/pedidos<?php echo strpos($_SESSION["permisos"]["pedidos"],"d")!== false || $_SESSION["permisos"]["pedidos"] == "r" ? "" : "/cliente/".$_SESSION["usuario"]["id_usuario"];?>">Pedidos</a></li>
+            <?php  }?>
+            <?php if($seccion !== "/perfil"){?>
+                <li><a href="/users/profile/<?php echo $_SESSION["usuario"]["id_usuario"];?>">Perfil</a></li>
+            <?php }?>
+                <li><a class="<?php echo isset($_SESSION["usuario"]) ? "btn btn-danger p-2" : "btn btn-success p-2"?>" href="/<?php echo isset($_SESSION["usuario"]) ? "cerrar" : "/login"?>"><i class="<?php echo isset($_SESSION["usuario"]) ? "bi-box-arrow-right text-light" : "bi bi-box-arrow-in-right text-light"?>"></i></a></li>
         </ul>
       </nav>
-            <?php if($session["permisos"]!== "Administrador" && $seccion!= "/reserva"){?>
+            <?php if(strpos($_SESSION["permisos"]["pedidos"],"d")===false &&  $_SESSION["permisos"]["pedidos"]!=="r" && $seccion !== "/"){?>
                 <a class="btn-book-a-table" href="/reserva">Reservar</a>
             <?php }?>
                 

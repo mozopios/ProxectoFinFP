@@ -4,7 +4,6 @@
         <div class="section-header mt-3">
           <p>RALICE <span>SU MEJOR</span> PEDIDO</p>
         </div>
-
         <div class="row bg-light">
 
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
@@ -14,7 +13,7 @@
               <div class="row gy-4">
                 <div class="col-lg-6 col-md-6">
                     <label class="form-label" for="correo_electronico">Correo Electronico</label>
-                    <input type="email" name="correo_electronico" value="" class="form-control" placeholder="Correo Electronico">
+                    <input type="email" name="correo_electronico" value="<?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"]["correo_electronico"] : "";?>" class="form-control" placeholder="Correo Electronico">
                     <div class="col-lg-12 text-danger"><?php echo isset($error["correo_electronico"]) ? $error["correo_electronico"] : "";?></div>
                 </div>
                   <div class="col-lg-4 col-md-6">

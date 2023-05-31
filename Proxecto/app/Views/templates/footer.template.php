@@ -1,5 +1,5 @@
   <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer bg-black">
+  <footer  class="footer bg-black">
 
     <div class="container">
       <div class="row gy-3 justify-content-md-between">
@@ -13,7 +13,18 @@
           </div>
 
         </div>
-
+          
+         <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Horario</h4>
+            <p>
+              <strong>Comida: </strong>13:00 - 17:00<br>
+              <strong>Cena: </strong>21:00 - 01:00<br>
+            </p>
+          </div>
+        </div>
+          
         <div class="col-lg-3 col-md-6 d-inline-flex">
           <i class="bi bi-telephone icon"></i>
           <div>

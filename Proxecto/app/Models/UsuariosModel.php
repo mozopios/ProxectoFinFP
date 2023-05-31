@@ -14,8 +14,27 @@ class UsuariosModel extends Model{
         return $this->select("id_usuario, id_rol, nombre_usuario, apellidos, correo_electronico, telefono, baja_usuario")->get()->getResultArray();    
     }
     
-    public function getProfile(string $id){
+    public function loadUser(string $id){
             return $this->select("*")->where("id_usuario",$id)->get()->getResultArray();
+    }
+    
+    public function getProfileWithEmail(string $email){
+        return $this->select("*")->where("correo_electronico",$email)->get()->getResultArray();
+    }
+    
+    public function login(array $array) {
+        $pass = array();
+        $this->select("*")->where("correo_electronico",$array["correo_electronico"]);
+        $this->where("baja_usuario",0);
+        if($this->countAllResults() == 1) {
+            $user = $this->select("*")->where("correo_electronico",$array["correo_electronico"])->get()->getResultArray()[0];
+            if(password_verify($array["contraseña"],$user["contraseña"])){
+                unset($user["contraseña"]);
+                return $user;
+            }
+        } 
+        return NULL;
+        
     }
     
     public function bajaAltaUser(string $id){
@@ -58,7 +77,9 @@ class UsuariosModel extends Model{
     }
     
     public function add(array $_array){
-         $_array["contraseña"] = password_hash($_array["contraseña"], PASSWORD_DEFAULT);
+         $contraseña = password_hash($_array["contraseña"],PASSWORD_DEFAULT);
+         unset($_array["contraseña"]);
+         $_array["contraseña"] = $contraseña;
          $this->insert($_array);
          if($this->countAllResults()>0){
              return true;
@@ -74,6 +95,10 @@ class UsuariosModel extends Model{
     
     public function getIdWithEmail(string $email){
         return $this->select("id_usuario")->where("correo_electronico", $email)->get()->getResultArray()[0];
+    }
+    
+    public function getNombre(string $id){
+        return $this->select("nombre_usuario,apellidos")->where("id_usuario", $id)->get()->getResultArray()[0];
     }
 }
 

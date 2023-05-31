@@ -4,6 +4,33 @@ namespace App\Controllers;
 
 class UsuarioController extends BaseController
 {
+    public function mostrarRegistrarse(){
+        return view("registrarse");
+    }
+    
+    public function mostrarLogin(){
+        return view("login");
+    }
+    
+    public function procesarLogin() {
+        $usuarioModel = new \App\Models\UsuariosModel();
+        $usuario = $usuarioModel->login($_POST);
+        $data = [];
+        if(is_null($usuario)) {
+            $data["error"] = "Datos erroneos";
+            $data["usuario"] = $usuario;
+            return view('login.php',$data);
+        } else {            
+            $_SESSION['usuario'] = $usuario;   
+            $rolesModel = new \App\Models\RolesModel();
+            $_SESSION['permisos'] = $rolesModel->getPermisos($usuario["id_rol"]);
+            $data['seccion'] = '/';
+            header("Location: /");
+            die();
+            return view("templates/head.template.php",$data).view("index.view.php",$data).view("templates/footer.template.php");
+        }
+        
+    }
     
     public function mostrarTodos()
     {
@@ -22,7 +49,7 @@ class UsuarioController extends BaseController
         $data = array();
         $data["seccion"] = "/view";
         $data["session"]["permisos"] = "Administrador";
-        $profile = $modelo->getProfile($id);
+        $profile = $modelo->loadUser($id);
         if(count($profile) !== 0){
             $nombreRol = $modeloRoles->getNombreRol($profile[0]["id_rol"]);
             $data["user"] = $profile[0];
@@ -39,7 +66,7 @@ class UsuarioController extends BaseController
         $data = array();
         $data["seccion"] = "/users/edit/$id";
         $data["session"]["permisos"] = "Administrador";
-        $profile = $modelo->getProfile($id);
+        $profile = $modelo->loadUser($id);
         if(count($profile) !== 0){
             unset($profile[0]["contraseña"]);
             $roles = $modeloRoles->getNombresAndId();
@@ -118,38 +145,32 @@ class UsuarioController extends BaseController
         }
     }
     
-    public function mostrarRegistrarse(){
-        $modeloRoles = new \App\Models\RolesModel();
-        $data = array();
-        $data["seccion"] = "/registro/cliente";
-        $data["session"]["permisos"] = "Administrador";
-        $data["roles"]= $modeloRoles->getNombresAndId();;
-        return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
-    }
-    
-    public function registrarseCliente() {
+    public function procesarRegistrarse() {
         $data[] = array();
+        $_POST["id_rol"] = "3";
         $error = $this->checkForm($_POST,"/add");
         if (count($error) === 0) {
             $modelo = new \App\Models\UsuariosModel();
-            $_POST["id_rol"] == "3";
             if($modelo->add($_POST)){
+                $usuario = $modelo->getProfileWithEmail($_POST["correo_electronico"])[0];
+                unset($usuario["contraseña"]);
+                $_SESSION["usuario"] = $usuario;
+                $permisos = new \App\Models\RolesModel();
+                $_SESSION["permisos"] = $permisos->getPermisos($_POST["id_rol"]);
                 return redirect()->to("/");
             } else {
                 $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
-                $data["seccion"] = "/registro/cliente";
+                $data["seccion"] = "/registro";
                 $data["session"]["permisos"] = "Administrador";
-                $modeloRoles = new \App\Models\RolesModel();
                 $data["error"]["general"] = "Error indeterminado al registrarte";
-                return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
+                return view("registrarse.php",$data);
             }
         } else {
             $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
-            $data["seccion"] = "/registro/cliente";
+            $data["seccion"] = "/registro";
             $data["session"]["permisos"] = "Administrador";
-            $modeloRoles = new \App\Models\RolesModel();
             $data["error"] = $error;
-            return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
+            return view("registrarse.php",$data);
         }
     }
     

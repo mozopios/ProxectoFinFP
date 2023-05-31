@@ -26,5 +26,8 @@ class RolesModel extends Model{
             return null;
         }
     }
+    public function getPermisos(string $id_rol){
+       return $this->select("pedidos, usuarios, menus, perfil")->where("id_rol",$id_rol)->get()->getResultArray()[0];
+    }
 }
 
