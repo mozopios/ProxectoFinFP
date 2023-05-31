@@ -1,53 +1,45 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="well well-sm">
-                <form class="form-horizontal" method="post">
-                    <fieldset>
-                        <legend class="text-center header">Contact us</legend>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="fname" name="name" type="text" placeholder="First Name" class="form-control">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="lname" name="name" type="text" placeholder="Last Name" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="email" name="email" type="text" placeholder="Email Address" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                            <div class="col-md-8">
-                                <input id="phone" name="phone" type="text" placeholder="Phone" class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
-                            <div class="col-md-8">
-                                <textarea class="form-control" id="message" name="message" placeholder="Enter your massage for us here. We will get back to you within 2 business days." rows="7"></textarea>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <div class="col-md-12 text-center">
-                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
+<section class="section-bg book-a-table mt-5">
+      <div class="container align-items-center">
+          <div class="col-lg-12 d-flex align-items-center">
+            <form action="<?php echo $seccion?>" method="post">
+                <?php if(isset($errorGeneral)){?>
+                <div class="alert alert-danger">
+                    <p class="text-black"><?php echo $errorGeneral?></p>
+                </div>
+                <?php }?>
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <label class="form-label" for="nombre_usuario">Nombre</label>
+                    <input type="text" class="form-control" name="nombre_usuario" value="<?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"]["nombre_usuario"] : "";?>" placeholder="Nombre">
+                    <div class="col-lg-12 text-danger"><?php echo isset($error["nombre_usuario"]) ? $error["nombre_usuario"] : "";?></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label class="form-label" for="apellidos">Apellidos</label>
+                    <input type="text" class="form-control" name="apellidos" value="<?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"]["apellidos"] : "";?>" placeholder="Apellidos">
+                    <div class="col-lg-12 text-danger"><?php echo isset($error["apellidos"]) ? $error["apellidos"] : "";?></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label class="form-label" for="correo_electronico">Correo</label>
+                    <input type="email" class="form-control" name="correo_electronico" value="<?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"]["correo_electronico"] : "";?>" placeholder="Email">
+                    <div class="col-lg-12 text-danger"><?php echo isset($error["correo_electronico"]) ? $error["correo_electronico"] : "";?></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <label class="form-label" for="telefono">Telefono</label>
+                    <input type="text" class="form-control" name="telefono" value="<?php echo isset($_SESSION["usuario"]) ? $_SESSION["usuario"]["telefono"] : "";?>" placeholder="Telefono">
+                    <div class="col-lg-12 text-danger"><?php echo isset($error["telefono"]) ? $error["telefono"] : "";?></div>
+                </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <label class="form-label" for="contraseña">Contraseña</label>
+                      <input type="password" class="form-control" name="contraseña" value="" placeholder="Sin Modificar">
+                      <div class="col-lg-12 text-danger"><?php echo isset($error["contraseña"]) ? $error["contraseña"] : "";?></div>
+                    </div>
+                    <div class="text-center">
+                        <button  class="btn btn-primary" type="submit">Guardar Cambios</button>
+                    </div>
             </div>
+         </form>
+
         </div>
-    </div>
-</div>
+
+      </div>
+    </section>

@@ -67,7 +67,7 @@ session_start();
         $routes->get("/pedidos/realizado/(:num)","PedidoController::realizadoPedido/$1");
         $routes->get("/pedidos/process/(:num)","PedidoController::realizadoPedido/$1");
     }
-
+    
     if($_SESSION["permisos"]["pedidos"] == "rw"){
         
         $routes->get('/pedidos/cliente/(:num)','PedidoController::mostrarPedidosCliente/$1');
@@ -81,7 +81,7 @@ session_start();
 
     }
 
-
+//Rutas MenusController
     if(strpos($_SESSION["permisos"]["menus"],"d")!==false){
     
         $routes->get("/menus/edit/(:num)","MenusController::mostrarEdit/$1");
@@ -97,8 +97,6 @@ session_start();
         $routes->get("/menus/alta/(:num)","MenusController::bajaAltaMenu/$1");
     }
 
-//Perfil
-
 //Rutas para todos
     //Inicio
         $routes->get("/","InicioController::index");
@@ -110,9 +108,11 @@ session_start();
     //Rutas Pedidos
         $routes->get('/pedidos/view/(:num)','PedidoController::viewPedido/$1');
         
-    //Profile
-        $routes->get('/profile/(:num)','PedidoController::viewPedido/$1');
-        
+    //Rutas Pefil
+        $routes->get('/profile/(:num)','UsuarioController::mostrarProfile/$1');
+        $routes->post("/profile/(:num)","UsuarioController::editProfile/$1");
+    
+    //Cerrar Session
         $routes->get("/cerrar", function(){
             session_destroy();
                 header("Location:/login");

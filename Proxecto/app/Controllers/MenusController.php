@@ -7,7 +7,6 @@ class MenusController extends BaseController
     public function mostrarMenus(){
         $data= array();
         $data["seccion"] = "/menus";
-        $data["session"]["permisos"] = "Administrador";
         $menuModel = new \App\Models\MenusModel();
         $data["menus"] = $menuModel->getAll();
         return view("templates/head.template.php",$data).view("menus.view.php",$data).view("templates/footer.template.php");
@@ -37,7 +36,6 @@ class MenusController extends BaseController
         $data = array();
         if($modelo->isExistMenu($id)>0){
             $data["seccion"] = "/menus/edit/$id";
-            $data["session"]["permisos"] = "Administrador";
             $menu = $modelo->getMenu($id);
             $data["menu"] = $menu;
             return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
@@ -55,23 +53,20 @@ class MenusController extends BaseController
             } else {
                 $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
                 $data["seccion"] = "/menus/edit/$id";
-                $data["session"]["permisos"] = "Administrador";
-                $data["error"]["general"] = "Error indeterminado al guardar";
-                return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+                $data["errorGeneral"] = "Error indeterminado al guardar";
+                return view("templates/head.template.php",$data).view("menus.view.php",$data).view("templates/footer.template.php");
             }
         } else {
             $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
             $data["seccion"] = "/menus/edit/$id";
-            $data["session"]["permisos"] = "Administrador";
             $data["error"] = $error;
-            return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
+            return view("templates/head.template.php",$data).view("menus.view.php",$data).view("templates/footer.template.php");
         }
     }
     
     public function mostrarAdd(){
         $data = array();
         $data["seccion"] = "/menus/add";
-        $data["session"]["permisos"] = "Administrador";
         return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
     }
     
@@ -85,14 +80,12 @@ class MenusController extends BaseController
             } else {
                 $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
                 $data["seccion"] = "/menus/add";
-                $data["session"]["permisos"] = "Administrador";
-                $data["error"]["general"] = "Error indeterminado al guardar";
+                $data["errorGeneral"] = "Error indeterminado al guardar";
                 return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
             }
         } else {
             $data["menu"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
             $data["seccion"] = "/menus/add";
-            $data["session"]["permisos"] = "Administrador";
             $data["error"] = $error;
             return view("templates/head.template.php",$data).view("menu.view.php",$data).view("templates/footer.template.php");
         }

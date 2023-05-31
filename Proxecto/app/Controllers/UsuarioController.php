@@ -32,25 +32,37 @@ class UsuarioController extends BaseController
         
     }
     
+    public function mostrarProfile($id)
+    {
+        if($_SESSION["usuario"]["id_usuario"] == $id){
+            $modelo = new \App\Models\UsuariosModel();
+            $data = array();
+            $usuarios = $modelo->getAll();
+            $data["usuarios"] = $usuarios;
+            $data["seccion"] = "/profile/".$_SESSION["usuario"]["id_usuario"];
+           return view("templates/head.template.php",$data).view("profile.view.php",$data).view("templates/footer.template.php");
+        }else{
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
+    
     public function mostrarTodos()
     {
-        $modelo = new \App\Models\UsuariosModel;
+        $modelo = new \App\Models\UsuariosModel();
         $data = array();
         $usuarios = $modelo->getAll();
         $data["usuarios"] = $usuarios;
-        $data["session"]["permisos"] = "Administrador";
         $data["seccion"] = "/users";
        return view("templates/head.template.php",$data).view("users.view.php",$data).view("templates/footer.template.php");
     }
     
     public function viewUser($id){
         $modelo = new \App\Models\UsuariosModel();
-        $modeloRoles = new \App\Models\RolesModel();
         $data = array();
-        $data["seccion"] = "/view";
-        $data["session"]["permisos"] = "Administrador";
         $profile = $modelo->loadUser($id);
         if(count($profile) !== 0){
+            $data["seccion"] = "/users/view/$is";
+            $modeloRoles = new \App\Models\RolesModel();
             $nombreRol = $modeloRoles->getNombreRol($profile[0]["id_rol"]);
             $data["user"] = $profile[0];
             $data["user"]["nombre_rol"]= $nombreRol["nombre_rol"];
@@ -78,7 +90,7 @@ class UsuarioController extends BaseController
         }
     }
     
-    public function edit($id) {
+    public function edit(string $id) {
         $data[] = array();
         $error = $this->checkForm($_POST,"/edit");
         if (count($error) === 0) {
@@ -88,17 +100,15 @@ class UsuarioController extends BaseController
             } else {
                 $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
                 $data["seccion"] = "/users/edit/$id";
-                $data["session"]["permisos"] = "Administrador";
                 $modeloRoles = new \App\Models\RolesModel();
                 $roles = $modeloRoles->getNombresAndId();
                 $data["roles"]= $roles;
-                $data["error"]["general"] = "Error indeterminado al guardar";
+                $data["errorGeneral"] = "Error indeterminado al guardar";
                 return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
             }
         } else {
             $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
             $data["seccion"] = "/users/edit/$id";
-            $data["session"]["permisos"] = "Administrador";
             $modeloRoles = new \App\Models\RolesModel();
             $roles = $modeloRoles->getNombresAndId();
             $data["roles"]= $roles;
@@ -111,7 +121,6 @@ class UsuarioController extends BaseController
         $modeloRoles = new \App\Models\RolesModel();
         $data = array();
         $data["seccion"] = "/users/add";
-        $data["session"]["permisos"] = "Administrador";
         $data["roles"]= $modeloRoles->getNombresAndId();;
         return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
     }
@@ -126,17 +135,15 @@ class UsuarioController extends BaseController
             } else {
                 $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
                 $data["seccion"] = "/users/add";
-                $data["session"]["permisos"] = "Administrador";
                 $modeloRoles = new \App\Models\RolesModel();
                 $roles = $modeloRoles->getNombresAndId();
                 $data["roles"]= $roles;
-                $data["error"]["general"] = "Error indeterminado al guardar";
+                $data["errorGeneral"] = "Error indeterminado al guardar";
                 return view("templates/head.template.php",$data).view("user.view.php",$data).view("templates/footer.template.php");
             }
         } else {
             $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
             $data["seccion"] = "/users/add";
-            $data["session"]["permisos"] = "Administrador";
             $modeloRoles = new \App\Models\RolesModel();
             $roles = $modeloRoles->getNombresAndId();
             $data["roles"]= $roles;
@@ -161,14 +168,12 @@ class UsuarioController extends BaseController
             } else {
                 $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
                 $data["seccion"] = "/registro";
-                $data["session"]["permisos"] = "Administrador";
-                $data["error"]["general"] = "Error indeterminado al registrarte";
+                $data["errorGeneral"] = "Error indeterminado al registrarte";
                 return view("registrarse.php",$data);
             }
         } else {
             $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
             $data["seccion"] = "/registro";
-            $data["session"]["permisos"] = "Administrador";
             $data["error"] = $error;
             return view("registrarse.php",$data);
         }
@@ -228,10 +233,42 @@ class UsuarioController extends BaseController
     
     public function bajaAltaUser(string $id){
         $modelo = new \App\Models\UsuariosModel();
+        if($_SESSION["usuario"]["id_usuario"] == $id){
+            $data = array();
+            $usuarios = $modelo->getAll();
+            $data["errorGeneral"] = "No puedes darte de baja";
+            $data["usuarios"] = $modelo->getAll();
+            $data["seccion"] = "/users";
+            return view("templates/head.template.php",$data).view("users.view.php",$data).view("templates/footer.template.php");
+        }
         if($modelo->bajaAltaUser($id)){
             return redirect()->to("/users");
         }else{
             throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
+    }
+    
+    public function editProfile(string $idProfile) {
+        $data[] = array();
+        $_POST["id_rol"] = $_SESSION["usuario"]["id_rol"];
+        $error = $this->checkForm($_POST,"/edit");
+        if (count($error) === 0) {
+            $modelo = new \App\Models\UsuariosModel();
+            if($modelo->edit($_POST,$idProfile)){
+                $user = $modelo->loadUser($idProfile)[0];
+                $_SESSION["usuario"] = $user;
+                return redirect()->to("/profile/$idProfile");
+            } else {
+                $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+                $data["seccion"] = "/profile/$idProfile";
+                $data["errorGeneral"] = "Error indeterminado al guardar";
+                return view("templates/head.template.php",$data).view("profile.view.php",$data).view("templates/footer.template.php");
+            }
+        } else {
+            $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+            $data["seccion"] = "/profile/$idProfile";
+            $data["error"] = $error;
+            return view("templates/head.template.php",$data).view("profile.view.php",$data).view("templates/footer.template.php");
         }
     }
 }

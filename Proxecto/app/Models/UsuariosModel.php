@@ -56,16 +56,17 @@ class UsuariosModel extends Model{
         }
     }
     
-    public function edit(array $_array,$id){
+    public function edit(array $_array,string $id){
         $user = $this->select("*")->where("id_usuario",$id)->get()->getResultArray();
         if(count($user) > 0){
-            if($_array["contraseña"]!= ""){
+            if(!empty($_array["contraseña"])){
                 $_array["contraseña"] = password_hash($_array["contraseña"],PASSWORD_DEFAULT);
                 $this->set($_array);
                 $this->where("id_usuario",$id);
                 $this->update();
                 return true;
             }else{
+                unset($_array["contraseña"]);
                 $this->set($_array);
                 $this->where("id_usuario",$id);
                 $this->update();

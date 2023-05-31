@@ -42,7 +42,7 @@
                     <div class="col-lg-12 text-danger"><?php echo isset($error["cantidad"]) ? $error["cantidad"] : "";?></div>
                 </div>
                   <div class="col-lg-12 col-md-6">
-                    <textarea class="form-control" name="comentario" rows="5" placeholder="Comentario"></textarea>
+                    <textarea class="form-control" name="comentario" rows="5" placeholder="Comentario"><?php echo isset($pedido["coementario"]) ? $pedido["comentario"] : "";?></textarea>
                     <div class="validate"></div>
               </div>
               </div>

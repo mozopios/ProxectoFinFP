@@ -10,9 +10,19 @@ class PedidoController extends \App\Controllers\BaseController{
     {
         $modelo = new \App\Models\PedidosModel();
         $data = array();
+        $data["seccion"] = "/pedidos";
+        if($_SESSION["permisos"]["pedidos"] == "r"){
+            $pedidos = $modelo->getForCama();
+            if(empty($pedidos)){
+                $data["aviso"] = "No hay pedidos para la jornada de hoy";
+                return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
+            }else{
+               $data["pedidos"] = $pedidos;
+               return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
+            }
+        }
         $pedidos = $modelo->getAll();
         $data["pedidos"] = $pedidos;
-        $data["seccion"] = "/pedidos";
        return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
     }
     
@@ -67,12 +77,12 @@ class PedidoController extends \App\Controllers\BaseController{
             ];
             $modelo = new \App\Models\PedidosModel();
             if($modelo->add($_add)){
-                return redirect()->to("/pedidos/cliente/".$_SESSION['id_usuario']);
+                return redirect()->to("/pedidos/cliente/".$_SESSION["usuario"]["id_usuario"]);
             } else {
                 $data["pedido"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
-                $data["seccion"] = "/reserva";
-                $data["error"]["general"] = "Error indeterminado al guardar";
-                return view("templates/head.template.php",$data).view("pedido.view.php",$data).view("templates/footer.template.php");
+                $data["seccion"] = "/pedidos/cliente/".$_SESSION["usuario"]["id_usuario"];
+                $data["errorGeneral"] = "Error indeterminado al guardar";
+                return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
             }
         } else {
             $data["pedido"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
@@ -80,7 +90,7 @@ class PedidoController extends \App\Controllers\BaseController{
             $menuModel = new \App\Models\MenusModel();
             $data["menus"] = $menuModel->getNombres();
             $data["error"] = $error;
-            return view("templates/head.template.php",$data).view("pedido.view.php",$data).view("templates/footer.template.php");
+            return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
         }
     }
     
@@ -123,14 +133,8 @@ class PedidoController extends \App\Controllers\BaseController{
             if($post["hora_recogida"]<date("h:i")){
                 $error["hora_recogida"] = "La hora no puede ser inferior a la actual";
             }
-        }elseif(date("h:i")<date("17:00")){
-            if($post["hora_recogida"]<date("13:00") || $post["hora_recogida"]>date("17:00")){
-                $error["hora_recogida"] = "Nuestro horario de mañana es de 13:00 a 17:00";
-            }
-        }else{
-            if($post["hora_recogida"]<date("21:00") || $post["hora_recogida"]>date("1:00")){
-                $error["hora_recogida"] = "Nuestro horario nocturno es de 21:00 a 1:00";
-            }
+        }elseif($post["hora_recogida"]>date("17:00") && $post["hora_recogida"]<date("13:00") || $post["hora_recogida"]<date("21:00") && $post["hora_recogida"]>date("1:00")){
+                $error["hora_recogida"] = "Porfavor echele un vistazo al horario del footer";
         }
         if (empty($post["cantidad"])) {
             $error["cantidad"] = "Campo obligatorio";
@@ -142,10 +146,14 @@ class PedidoController extends \App\Controllers\BaseController{
     
     public function mostrarPedidosCliente(string $idCliente){
         $data = array();
-        $data["seccion"] = "/pedidos/cliente/$idCliente";
-        $modelo = new \App\Models\PedidosModel();
-        $data["pedidos"] = $modelo->getPedidoCliente($idCliente);
-        return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php");
+        if($idCliente == $_SESSION["usuario"]["id_usuario"]){
+            $data["seccion"] = "/pedidos/cliente/$idCliente";
+            $modelo = new \App\Models\PedidosModel();
+            $data["pedidos"] = $modelo->getPedidoCliente($idCliente);
+            return view("templates/head.template.php",$data).view("pedidos.view.php",$data).view("templates/footer.template.php"); 
+        }else{
+            throw \CodeIgniter\Exceptions\PageNotFoundException::forPageNotFound();
+        }
     }
 }
 

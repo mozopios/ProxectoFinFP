@@ -44,7 +44,7 @@
                 <li><a href="/pedidos<?php echo strpos($_SESSION["permisos"]["pedidos"],"d")!== false || $_SESSION["permisos"]["pedidos"] == "r" ? "" : "/cliente/".$_SESSION["usuario"]["id_usuario"];?>">Pedidos</a></li>
             <?php  }?>
             <?php if($seccion !== "/perfil"){?>
-                <li><a href="/users/profile/<?php echo $_SESSION["usuario"]["id_usuario"];?>">Perfil</a></li>
+                <li><a href="/profile/<?php echo (int)$_SESSION["usuario"]["id_usuario"];?>">Perfil</a></li>
             <?php }?>
                 <li><a class="<?php echo isset($_SESSION["usuario"]) ? "btn btn-danger p-2" : "btn btn-success p-2"?>" href="/<?php echo isset($_SESSION["usuario"]) ? "cerrar" : "/login"?>"><i class="<?php echo isset($_SESSION["usuario"]) ? "bi-box-arrow-right text-light" : "bi bi-box-arrow-in-right text-light"?>"></i></a></li>
         </ul>

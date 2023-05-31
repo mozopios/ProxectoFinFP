@@ -15,6 +15,14 @@ class PedidosModel extends Model{
         return $this->select("*")->get()->getResultArray();
     }
     
+    public function getForCama(){
+        $this->select("*")->where("estado_pedido",0);
+        $this->where("fecha_recogida",date("Y-m-d"));
+        $this->orWhere("estado_pedido",0);
+        $this->where("fecha_recogida", date("Y-m-d", strtotime(date("Y-m-d")."+ 1 days")));
+        return $this->where("hora_recogida","01:00:00")->get()->getResultArray();
+    }
+    
     public function isExistPedido(string $id){
         $this->select("*")->where("id_pedido", $id);
         return $this->countAllResults();

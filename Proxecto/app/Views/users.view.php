@@ -1,5 +1,10 @@
 <section class="section-header align-items-center section-bg mt-5">
     <div class="container-fluid">
+        <?php if(isset($errorGeneral)){?>
+            <div class="alert alert-danger">
+                <p class="text-black"><?php echo $errorGeneral?></p>
+            </div>   
+        <?php }?>
         <?php if(strpos($_SESSION["permisos"]["menus"],"d")!== false){?>
             <div class="text-end mb-4 me-3"><a href="/users/add"  class="btn btn-primary">Añadir Usuario +</a></div>
         <?php }?>

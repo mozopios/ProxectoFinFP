@@ -299,3 +299,473 @@ in APPPATH/Controllers/PedidoController.php on line 26.
  3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
  4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
  5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:57:54 --> Undefined index: id_usuario
+in APPPATH/Controllers/PedidoController.php on line 70.
+ 1 APPPATH/Controllers/PedidoController.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->addPedido()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:11:38 --> Undefined index: fecha_mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:11:58 --> Undefined index: fecha_mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:24 --> Undefined index: fecha_mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:26 --> Undefined index: fecha_mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:12:27 --> Undefined index: fecha_mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:13:22 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:14:20 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:14:24 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:14:59 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(16): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:15:55 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:16:32 --> Undefined index: mañana
+in APPPATH/Views/pedidos.view.php on line 21.
+ 1 APPPATH/Views/pedidos.view.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:16:40 --> Illegal string offset 'estado_pedido'
+in APPPATH/Views/pedidos.view.php on line 21.
+ 1 APPPATH/Views/pedidos.view.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:17:05 --> Illegal string offset 'estado_pedido'
+in APPPATH/Views/pedidos.view.php on line 21.
+ 1 APPPATH/Views/pedidos.view.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:17:17 --> Illegal string offset 'estado_pedido'
+in APPPATH/Views/pedidos.view.php on line 21.
+ 1 APPPATH/Views/pedidos.view.php(21): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:51:26 --> Trying to access array offset on value of type null
+in APPPATH/Views/pedidos.view.php on line 20.
+ 1 APPPATH/Views/pedidos.view.php(20): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(20): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:53:27 --> Trying to access array offset on value of type null
+in APPPATH/Views/pedidos.view.php on line 23.
+ 1 APPPATH/Views/pedidos.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(20): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:54:58 --> Trying to access array offset on value of type null
+in APPPATH/Views/pedidos.view.php on line 23.
+ 1 APPPATH/Views/pedidos.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(20): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:55:48 --> Trying to access array offset on value of type null
+in APPPATH/Views/pedidos.view.php on line 23.
+ 1 APPPATH/Views/pedidos.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 11:59:51 --> syntax error, unexpected ')', expecting ';' or ','
+in APPPATH/Views/pedidos.view.php on line 36.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/PedidoController.php(18): view()
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:04:18 --> Undefined variable: aviso
+in APPPATH/Views/pedidos.view.php on line 6.
+ 1 APPPATH/Views/pedidos.view.php(6): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(21): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:08:49 --> Undefined variable: pedidos
+in APPPATH/Views/pedidos.view.php on line 22.
+ 1 APPPATH/Views/pedidos.view.php(22): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:09:38 --> Undefined variable: pedidos
+in APPPATH/Views/pedidos.view.php on line 19.
+ 1 APPPATH/Views/pedidos.view.php(19): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/pedidos.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/PedidoController.php(18): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\PedidoController->mostrarTodos()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:42:54 --> Array to string conversion
+in APPPATH/Views/user.view.php on line 5.
+ 1 APPPATH/Views/user.view.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(75): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarEdit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:45:43 --> Undefined variable: user
+in APPPATH/Views/user.view.php on line 23.
+ 1 APPPATH/Views/user.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(115): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 12:47:06 --> Undefined variable: user
+in APPPATH/Views/user.view.php on line 23.
+ 1 APPPATH/Views/user.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(115): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarAdd()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:05:14 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:06:19 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:07:19 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:07:41 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:07:45 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:07:48 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:08:24 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:08:37 --> Call to a member function get() on string
+in APPPATH/Config/Routes.php on line 112.
+ 1 SYSTEMPATH/Router/RouteCollection.php(267): require()
+ 2 SYSTEMPATH/CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 3 SYSTEMPATH/CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:09:15 --> Undefined variable: modeloRoles
+in APPPATH/Controllers/UsuarioController.php on line 112.
+ 1 APPPATH/Controllers/UsuarioController.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->edit()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:10:04 --> Undefined variable: modeloRoles
+in APPPATH/Controllers/UsuarioController.php on line 112.
+ 1 APPPATH/Controllers/UsuarioController.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->edit()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:10:07 --> Undefined variable: modeloRoles
+in APPPATH/Controllers/UsuarioController.php on line 112.
+ 1 APPPATH/Controllers/UsuarioController.php(112): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->edit()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:15:59 --> Undefined variable: roles
+in APPPATH/Views/user.view.php on line 24.
+ 1 APPPATH/Views/user.view.php(24): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(270): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->editProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:22:01 --> Array to string conversion
+in APPPATH/Views/profile.view.php on line 5.
+ 1 APPPATH/Views/profile.view.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/profile.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuarioController.php(43): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarProfile()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:24:04 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 44.
+ 1 APPPATH/Views/templates/head.template.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:24:52 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 44.
+ 1 APPPATH/Views/templates/head.template.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:24:56 --> Undefined index: id_rol
+in APPPATH/Controllers/UsuarioController.php on line 253.
+ 1 APPPATH/Controllers/UsuarioController.php(253): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->editProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:25:08 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 44.
+ 1 APPPATH/Views/templates/head.template.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:25:28 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 44.
+ 1 APPPATH/Views/templates/head.template.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:25:57 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 47.
+ 1 APPPATH/Views/templates/head.template.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:31:47 --> Undefined index: id_usuario
+in APPPATH/Controllers/UsuarioController.php on line 37.
+ 1 APPPATH/Controllers/UsuarioController.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->mostrarProfile()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:31:48 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 47.
+ 1 APPPATH/Views/templates/head.template.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-31 14:31:51 --> Undefined index: id_usuario
+in APPPATH/Views/templates/head.template.php on line 47.
+ 1 APPPATH/Views/templates/head.template.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/templates/head.template.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/InicioController.php(11): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\InicioController->index()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
