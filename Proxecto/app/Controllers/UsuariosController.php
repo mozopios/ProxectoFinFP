@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 namespace App\Controllers;
 
-class UsuarioController extends BaseController
+class UsuariosController extends BaseController
 {
     public function mostrarRegistrarse(){
         return view("registrarse");
@@ -61,7 +61,7 @@ class UsuarioController extends BaseController
         $data = array();
         $profile = $modelo->loadUser($id);
         if(count($profile) !== 0){
-            $data["seccion"] = "/users/view/$is";
+            $data["seccion"] = "/users/view/$id";
             $modeloRoles = new \App\Models\RolesModel();
             $nombreRol = $modeloRoles->getNombreRol($profile[0]["id_rol"]);
             $data["user"] = $profile[0];
@@ -99,6 +99,7 @@ class UsuarioController extends BaseController
                 return redirect()->to("/users");
             } else {
                 $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+                $data["user"]["id_usuario"] = $id;
                 $data["seccion"] = "/users/edit/$id";
                 $modeloRoles = new \App\Models\RolesModel();
                 $roles = $modeloRoles->getNombresAndId();
@@ -108,6 +109,7 @@ class UsuarioController extends BaseController
             }
         } else {
             $data["user"] = filter_var_array($_POST, FILTER_SANITIZE_SPECIAL_CHARS);
+            $data["user"]["id_usuario"] = $id;
             $data["seccion"] = "/users/edit/$id";
             $modeloRoles = new \App\Models\RolesModel();
             $roles = $modeloRoles->getNombresAndId();
@@ -209,6 +211,11 @@ class UsuarioController extends BaseController
             if($userModel->isExistEmail($post["correo_electronico"])>1){
                 $error["correo_electronico"] = 'El correo seleccionado ya está en uso';
             }       
+        }
+        if($seccion == "/edit"){
+            if($_SESSION["usuario"]["id_rol"] != $_POST["id_rol"]){
+                $error["id_rol"] = "No puedes cambiarte el rol a ti mismo";
+            }
         }
         if (empty($post['id_rol'])) {
             $error['id_rol'] = "Campo obligatorio";

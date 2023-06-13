@@ -37,47 +37,47 @@ session_start();
             header("Location: /login");
             die();
         }
-        $routes->get("/login","UsuarioController::mostrarLogin");
-        $routes->post("/login","UsuarioController::procesarLogin");
-        $routes->get("/registro","UsuarioController::mostrarRegistrarse");
-        $routes->post("/registro","UsuarioController::procesarRegistrarse");
+        $routes->get("/login","UsuariosController::mostrarLogin");
+        $routes->post("/login","UsuariosController::procesarLogin");
+        $routes->get("/registro","UsuariosController::mostrarRegistrarse");
+        $routes->post("/registro","UsuariosController::procesarRegistrarse");
     }else{
 //Rutas dependiendo de tus permisos
 
 // Rutas UsuariosController
     if(strpos($_SESSION["permisos"]["usuarios"],"d")!==false){
-        $routes->get('/users','UsuarioController::mostrarTodos');
+        $routes->get('/users','UsuariosController::mostrarTodos');
 
-        $routes->get("/users/view/(:num)","UsuarioController::viewUser/$1");
+        $routes->get("/users/view/(:num)","UsuariosController::viewUser/$1");
 
-        $routes->get("/users/edit/(:num)","UsuarioController::mostrarEdit/$1");
-        $routes->post("/users/edit/(:num)","UsuarioController::edit/$1");
+        $routes->get("/users/edit/(:num)","UsuariosController::mostrarEdit/$1");
+        $routes->post("/users/edit/(:num)","UsuariosController::edit/$1");
 
-        $routes->get("/users/add","UsuarioController::mostrarAdd");
-        $routes->post("/users/add","UsuarioController::add");
+        $routes->get("/users/add","UsuariosController::mostrarAdd");
+        $routes->post("/users/add","UsuariosController::add");
 
-        $routes->get("/users/baja/(:num)","UsuarioController::bajaAltaUser/$1");
-        $routes->get("/users/alta/(:num)","UsuarioController::bajaAltaUser/$1");
+        $routes->get("/users/baja/(:num)","UsuariosController::bajaAltaUser/$1");
+        $routes->get("/users/alta/(:num)","UsuariosController::bajaAltaUser/$1");
     }
 //Rutas PedidosController
     if($_SESSION["permisos"]["pedidos"] == "r" || strpos($_SESSION["permisos"]["pedidos"],"d")!==false){
     
-        $routes->get('/pedidos','PedidoController::mostrarTodos');
+        $routes->get('/pedidos','PedidosController::mostrarTodos');
     
-        $routes->get("/pedidos/realizado/(:num)","PedidoController::realizadoPedido/$1");
-        $routes->get("/pedidos/process/(:num)","PedidoController::realizadoPedido/$1");
+        $routes->get("/pedidos/realizado/(:num)","PedidosController::realizadoPedido/$1");
+        $routes->get("/pedidos/process/(:num)","PedidosController::realizadoPedido/$1");
     }
     
     if($_SESSION["permisos"]["pedidos"] == "rw"){
         
-        $routes->get('/pedidos/cliente/(:num)','PedidoController::mostrarPedidosCliente/$1');
+        $routes->get('/pedidos/cliente/(:num)','PedidosController::mostrarPedidosCliente/$1');
         
     }
 
     if($_SESSION["permisos"]["pedidos"] == "rw"){
 
-        $routes->get("/reserva", "PedidoController::mostrarFormPedido");
-        $routes->post("/reserva", "PedidoController::addPedido");
+        $routes->get("/reserva", "PedidosController::mostrarFormPedido");
+        $routes->post("/reserva", "PedidosController::addPedido");
 
     }
 
@@ -106,11 +106,11 @@ session_start();
         $routes->get("/menus/view/(:num)","MenusController::viewMenu/$1");
     
     //Rutas Pedidos
-        $routes->get('/pedidos/view/(:num)','PedidoController::viewPedido/$1');
+        $routes->get('/pedidos/view/(:num)','PedidosController::viewPedido/$1');
         
     //Rutas Pefil
-        $routes->get('/profile/(:num)','UsuarioController::mostrarProfile/$1');
-        $routes->post("/profile/(:num)","UsuarioController::editProfile/$1");
+        $routes->get('/profile/(:num)','UsuariosController::mostrarProfile/$1');
+        $routes->post("/profile/(:num)","UsuariosController::editProfile/$1");
     
     //Cerrar Session
         $routes->get("/cerrar", function(){

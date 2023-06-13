@@ -1,0 +1,40 @@
+CRITICAL - 2023-06-13 10:42:11 --> Undefined variable: is
+in APPPATH/Controllers/UsuariosController.php on line 64.
+ 1 APPPATH/Controllers/UsuariosController.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuariosController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:55:51 --> Undefined index: id_usuario
+in APPPATH/Views/user.view.php on line 23.
+ 1 APPPATH/Views/user.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuariosController.php(116): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuariosController->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 10:58:07 --> Undefined index: id_usuario
+in APPPATH/Views/user.view.php on line 23.
+ 1 APPPATH/Views/user.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuariosController.php(116): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuariosController->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-13 11:03:22 --> Undefined index: id_usuario
+in APPPATH/Views/user.view.php on line 23.
+ 1 APPPATH/Views/user.view.php(23): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(213): include('/home/dev/www/ProxectoFinFp/Proxecto/app/Views/user.view.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/UsuariosController.php(116): view()
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuariosController->edit()
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()

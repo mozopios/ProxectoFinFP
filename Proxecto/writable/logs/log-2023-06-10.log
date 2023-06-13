@@ -1,0 +1,14 @@
+CRITICAL - 2023-06-10 10:54:02 --> Undefined variable: is
+in APPPATH/Controllers/UsuarioController.php on line 64.
+ 1 APPPATH/Controllers/UsuarioController.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-10 10:54:10 --> Undefined variable: is
+in APPPATH/Controllers/UsuarioController.php on line 64.
+ 1 APPPATH/Controllers/UsuarioController.php(64): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\UsuarioController->viewUser()
+ 3 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(68): CodeIgniter\CodeIgniter->run()

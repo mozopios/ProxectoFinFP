@@ -4,7 +4,7 @@ declare(strict_types = 1);
 
 namespace App\Controllers;
 
-class PedidoController extends \App\Controllers\BaseController{
+class PedidosController extends \App\Controllers\BaseController{
     
     public function mostrarTodos()
     {

@@ -20,7 +20,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <label class="form-label" for="id_rol">Rol</label>
-                    <select class="form-select" name="id_rol" <?php echo strpos($_SESSION["permisos"]["usuarios"],"d") !== false  && isset($user["id_usuario"]) != $_SESSION["usuario"]["id_usuario"] ? "" : "disabled"?>>
+                    <select class="form-select" name="id_rol" <?php echo strpos($_SESSION["permisos"]["usuarios"],"d") !== false  && $user["id_usuario"] !== $_SESSION["usuario"]["id_usuario"] ? "" : "disabled"?>>
                         <?php if($roles > 0 && strpos($_SESSION["permisos"]["usuarios"],"d") !== false){
                             foreach ($roles as $rol):?>
                                 <option value="<?php echo $rol["id_rol"] ?>" <?php echo (isset($user["id_rol"]) && $user["id_rol"] == $rol["id_rol"]) ? "selected" : "";?>><?php echo $rol["nombre_rol"] ?></option>
