@@ -62,3 +62,16 @@ CREATE TABLE `pedidos` (
   CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`id_usuario`) REFERENCES `usuarios` (`id_usuario`),
   CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`id_menu`) REFERENCES `menus` (`id_menu`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4;
+
+
+INSERT INTO proxecto.roles_usuario (id_rol, nombre_rol, pedidos, usuarios, menus, perfil) VALUES(1,'Administrador', 'rwd', 'rwd', 'rwd', 'rwd');
+INSERT INTO proxecto.roles_usuario (id_rol, nombre_rol, pedidos, usuarios, menus, perfil) VALUES(2,'Camarero', 'r', '', 'r', 'rw');
+INSERT INTO proxecto.roles_usuario (id_rol, nombre_rol, pedidos, usuarios, menus, perfil) VALUES(3,'Cliente', 'rw', '', 'rw', 'rw');
+
+INSERT INTO proxecto.usuarios (id_rol, nombre_usuario, apellidos, correo_electronico, telefono, contraseña, baja_usuario) VALUES(1, 'Admin', 'Admin', 'admin@piosdrriba.com', '558 95 54 87', '$2y$10$bEhk1leraMvjnu9p/6SAse4x76y3c83j83KtMqSNN8inMaCX.PODq', 0);
+INSERT INTO proxecto.usuarios (id_rol, nombre_usuario, apellidos, correo_electronico, telefono, contraseña, baja_usuario) VALUES(2, 'Camarero', 'Camarero', 'camarero@piosdrriba.com', '558 95 54 86', '$2y$10$bEhk1leraMvjnu9p/6SAse4x76y3c83j83KtMqSNN8inMaCX.PODq', 0);
+INSERT INTO proxecto.usuarios (id_rol, nombre_usuario, apellidos, correo_electronico, telefono, contraseña, baja_usuario) VALUES(3, 'Cliente', 'Cliente', 'cliente@piosdrriba.com', '558 95 54 89', '$2y$10$bEhk1leraMvjnu9p/6SAse4x76y3c83j83KtMqSNN8inMaCX.PODq', 0);
+
+INSERT INTO proxecto.menus (segundo, postre, informacion, nombre_menu, primero, precio_menu, estado_menu) VALUES('Pechuga de pollo con patatas', 'Flan', 'Incluye comida,bebida y postre', 'Morgallón', 'Ensalada variada', 15, 0);
+INSERT INTO proxecto.menus (segundo, postre, informacion, nombre_menu, primero, precio_menu, estado_menu) VALUES('Cocido Gallego', 'Tarta de queso', 'Incluye comida,bebida y postre', 'Caneiro', 'Sopa de pollo', 15, 0);
+INSERT INTO proxecto.menus (segundo, postre, informacion, nombre_menu, primero, precio_menu, estado_menu) VALUES('Chuleton de ternera', 'Tarta de tres chocolates', 'Incluye comida,bebida y postre', 'As Bouciñas', 'Langostinos a la plancha', 16, 0);
