@@ -8,7 +8,7 @@
           <div>
             <h4>Dirección</h4>
             <p>
-              As Neves, 36448 - Spain<br>
+              As Neves, 36448 - España<br>
             </p>
           </div>
 
@@ -37,7 +37,7 @@
         </div>
 
         <div class="col-lg-2 col-md-6">
-          <h4>Follow Us</h4>
+          <h4>Siganos en redes sociales</h4>
           <div class="social-links d-inline-flex">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -52,6 +52,13 @@
     <div class="container-md justify-content-md-center">
       <div class="copyright">
         &copy; Copyright <strong><span>Pios d'Arriba</span></strong> 2023
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
   </footer>

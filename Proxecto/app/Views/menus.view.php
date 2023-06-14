@@ -1,11 +1,11 @@
 <section class="section-header align-items-center section-bg mt-5 ">
     <div class="container-fluid">
-    <?php if(isset($menus)){?>
-            <?php if(isset($errorGeneral)){?>
-                <div class="alert alert-danger">
-                    <p class="text-black"><?php echo $errorGeneral?></p>
-                </div>   
-            <?php }?>
+    <?php if(isset($errorGeneral)){?>            
+        <div class="alert alert-danger">
+            <p class="text-black"><?php echo $errorGeneral?></p>
+        </div>   
+    <?php }?>
+    <?php if(isset($menus) && count($menus)>0){?>
             <?php if($_SESSION["permisos"]["menus"] === "rwd"){?>
                 <div class="text-end mb-4 me-3"><a href="/menus/add"  class="btn btn-primary">Añadir Menu +</a></div>
             <?php }?>

@@ -5,7 +5,7 @@
                 <p class="text-black"><?php echo $errorGeneral?></p>
             </div>   
         <?php }?>
-    <?php if(isset($pedidos)){?>
+    <?php if(!isset($pedidos) && count($pedidos)>0){?>
         <table class="table">
             <thead>
             <tr>
@@ -37,7 +37,7 @@
             <?php if(isset($aviso)){?>
                 <p><?php echo $aviso?></p>
             <?php }else{?>
-                <p>No hay registros para mostrar</p>
+                <p>No hay pedidos para mostrar</p>
             <?php } ?>
         <?php } ?>
 </section>

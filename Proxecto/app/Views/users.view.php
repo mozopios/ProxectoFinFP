@@ -8,7 +8,7 @@
         <?php if(strpos($_SESSION["permisos"]["menus"],"d")!== false){?>
             <div class="text-end mb-4 me-3"><a href="/users/add"  class="btn btn-primary">Añadir Usuario +</a></div>
         <?php }?>
-        <?php if(isset($usuarios)){?>
+        <?php if(isset($usuarios) && count($usuarios)>0){?>
         <table class="table">
           <thead>
             <tr>

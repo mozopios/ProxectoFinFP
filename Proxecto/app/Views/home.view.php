@@ -2,8 +2,8 @@
     <div class="container">
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <h2 data-aos="fade-up">Come como en casa realizando tu pedido online</h2>
+          <p data-aos="fade-up" data-aos-delay="100">Comida casera con los mejores sabores para todos los gustos</p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
             <?php if($_SESSION["permisos"]["pedidos"] !== "r" && strpos($_SESSION["permisos"]["pedidos"],"d")=== false){?>
             <a href="/reserva" class="btn-book-a-table">Reservar</a>

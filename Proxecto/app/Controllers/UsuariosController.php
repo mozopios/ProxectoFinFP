@@ -77,7 +77,6 @@ class UsuariosController extends BaseController
         $modeloRoles = new \App\Models\RolesModel();
         $data = array();
         $data["seccion"] = "/users/edit/$id";
-        $data["session"]["permisos"] = "Administrador";
         $profile = $modelo->loadUser($id);
         if(count($profile) !== 0){
             unset($profile[0]["contraseña"]);
@@ -92,6 +91,7 @@ class UsuariosController extends BaseController
     
     public function edit(string $id) {
         $data[] = array();
+        $_POST["id_usuario"] = $id;
         $error = $this->checkForm($_POST,"/edit");
         if (count($error) === 0) {
             $modelo = new \App\Models\UsuariosModel();
@@ -212,8 +212,9 @@ class UsuariosController extends BaseController
                 $error["correo_electronico"] = 'El correo seleccionado ya está en uso';
             }       
         }
-        if($seccion == "/edit"){
-            if($_SESSION["usuario"]["id_rol"] != $_POST["id_rol"]){
+        if($seccion == "/edit" && $_SESSION["usuario"]["id_usuario"] == $post["id_usuario"]){
+            if($_SESSION["usuario"]["id_rol"] != $post["id_rol"]){
+                $_POST["id_rol"] = $_SESSION["usuario"]["id_rol"];
                 $error["id_rol"] = "No puedes cambiarte el rol a ti mismo";
             }
         }
