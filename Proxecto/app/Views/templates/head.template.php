@@ -49,7 +49,7 @@
                 <li><a class="<?php echo isset($_SESSION["usuario"]) ? "btn btn-danger p-2" : "btn btn-success p-2"?>" href="/<?php echo isset($_SESSION["usuario"]) ? "cerrar" : "/login"?>"><i class="<?php echo isset($_SESSION["usuario"]) ? "bi-box-arrow-right text-light" : "bi bi-box-arrow-in-right text-light"?>"></i></a></li>
         </ul>
       </nav>
-            <?php if(strpos($_SESSION["permisos"]["pedidos"],"d")===false &&  $_SESSION["permisos"]["pedidos"]!=="r" && $seccion !== "/"){?>
+            <?php if(strpos($_SESSION["permisos"]["pedidos"],"d")===false &&  $_SESSION["permisos"]["pedidos"]!=="r" && $seccion !== "/" && $seccion !== "/reserva"){?>
                 <a class="btn-book-a-table" href="/reserva">Reservar</a>
             <?php }?>
                 
