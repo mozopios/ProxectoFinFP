@@ -28,7 +28,7 @@
                 <td><?php echo $usuario["telefono"];?></td>
                 <td class="items d-inline-block"><a href="/users/view/<?php echo $usuario["id_usuario"];?>"><i class="bi bi-eye-fill text-muted"></i></a>
                     <a href="/users/edit/<?php echo $usuario["id_usuario"];?>"><i class="bi bi-person-fill-gear text-primary"></i></a>
-                    <a href="/users/<?php echo $usuario["baja_usuario"] != 0 ? "alta" : "baja"?>/<?php echo $usuario["id_usuario"];?>"><i class="<?php echo $usuario["baja_usuario"] != 0 ? "bi bi-person-fill-slash text-danger" : "bi bi-person-plus-fill text-success"?>"></i></a></td>
+                    <a href="/users/<?php echo $usuario["baja_usuario"] != 0 ? "alta" : "baja"?>/<?php echo $usuario["id_usuario"];?>"><i class="<?php echo $usuario["baja_usuario"] != 0 ? "bi bi-person-fill text-danger" : "bi bi-person-fill text-success"?>"></i></a></td>
             </tr>
               <?php endforeach;?>
           </tbody>

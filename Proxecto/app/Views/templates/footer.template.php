@@ -31,7 +31,7 @@
             <h4>Contacto</h4>
             <p>
               <strong>Teléfono:</strong> +34 558 95 54 88<br>
-              <strong>Email:</strong> piosDArriba@email.com<br>
+              <strong>Email:</strong> piosDrriba@email.com<br>
             </p>
           </div>
         </div>
@@ -42,7 +42,7 @@
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://github.com/mozopios/ProxectoFinFP" class="github"><i class="bi bi-github"></i></a>
           </div>
         </div>
 
